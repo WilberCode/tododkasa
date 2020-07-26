@@ -1,0 +1,42 @@
+.products{
+    @apply grid grid-cols-5  gap-6;
+    .product{ 
+        @apply  m-auto p-3 cursor-pointer flex flex-column ;
+        .woocommerce-LoopProduct-link {
+            @apply  h-full ; 
+        }
+        .onsale{
+            @apply absolute ;  
+            
+        }
+        img{
+            @apply  m-auto p-3 w-full h-58 border-gray-300 object-contain ;  
+             border-style: solid;
+             border-width: 6px;
+             
+        }   
+        h2, .add_to_cart_button,.price,ins, del{
+            @apply mx-4;
+        }
+        h2{ 
+            @apply  mt-5 text-base opacity-75 text-black ;  
+            
+        }
+        .price{
+            ins, del{
+                @apply  block;   
+            }
+            .woocommerce-Price-amount{
+                @apply   text-xs opacity-75 text-black  ;   
+            } 
+            .woocommerce-Price-currencySymbol{
+                 @apply   text-base opacity-75 text-black  ;   
+            }
+        }
+        .add_to_cart_button{
+
+            @apply  py-1 px-3 text-xs tracking-wide font-black text-red-500 uppercase border border-red-500 inline-block ;  
+        }
+    }
+    
+}
