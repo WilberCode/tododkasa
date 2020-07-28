@@ -6,8 +6,8 @@
     </div>
     <div class="header-wrap container m-auto flex h-14  sm:h-24 justify-between items-center "> 
         <div class=" flex relative z-40 ">
-            <a href="https://www.instagram.com/feriasdigitales/"  class=" no-underline mr-4 " > <svg class=" text-primary-500 fill-current  w-6 h-6 "><use href="<?php echo get_bloginfo('template_directory').'/build/svg/icons.svg#instagrams'; ?>"></svg> </a>
-            <a href="https://www.facebook.com/feriasdigitales/"  class=" no-underline " > <svg class="text-primary-500 fill-current  w-6 h-6 "><use href="<?php echo get_bloginfo('template_directory').'/build/svg/icons.svg#facebooks'; ?>"></svg> </a>
+            <a href="https://www.instagram.com/feriasdigitales/"  class=" no-underline mr-4 " > <svg class=" text-secondary-500 fill-current  w-6 h-6 "><use href="<?php echo get_bloginfo('template_directory').'/build/svg/icons.svg#instagrams'; ?>"></svg> </a>
+            <a href="https://www.facebook.com/feriasdigitales/"  class=" no-underline " > <svg class="text-secondary-500 fill-current  w-6 h-6 "><use href="<?php echo get_bloginfo('template_directory').'/build/svg/icons.svg#facebooks'; ?>"></svg> </a>
               <!-- <div>
               <a class="cart-contents" href="<?php // echo esc_url( wc_get_cart_url() ); ?>" title="<?php // esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
 				<?php /* translators: %d: number of items in cart */ ?>
