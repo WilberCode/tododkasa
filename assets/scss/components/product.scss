@@ -71,7 +71,11 @@
             max-width: 112px;
             max-width: max-content;
             @screen maxsm{
+<<<<<<< HEAD
                 @apply  mx-4  ;   
+=======
+                @apply  mx-2; 
+>>>>>>> develop
              }
     }
     }
