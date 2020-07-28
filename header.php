@@ -13,7 +13,7 @@
 				<?php /* translators: %d: number of items in cart */ ?>
 				<?php// echo wp_kses_post( WC()->cart->get_cart_subtotal() ); ?> <span class="count"><?php // echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() ) ); ?></span>
 			</a>
-              </div>
+              </div> 
             <div>
                 <ul id="site-header-cart" class="site-header-cart menu">
                     
