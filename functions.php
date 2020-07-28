@@ -127,7 +127,7 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 
 //  function bd_rrp_price_html( $price, $product ) {
-// 	$return_string = '' . $price;
+// 	$return_string = '' . $price; 
 // 	return $return_string;
 //   }
 //   add_filter( 'woocommerce_get_price_html', 'bd_rrp_price_html', 100, 2 );
