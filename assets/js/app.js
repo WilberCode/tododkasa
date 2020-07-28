@@ -1,7 +1,7 @@
  
  
 var $ = jQuery.noConflict();
-import './components/posts'
+// import './components/posts'
 import menuMobile from  './components/menuMobile'
 import modalMarca from  './components/modalMarca'
 

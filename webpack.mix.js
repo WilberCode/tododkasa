@@ -38,12 +38,13 @@ mix.purgeCss({
     paths: () => glob.sync([
         path.join(__dirname, '*.php'), 
         path.join(__dirname, 'templates/**/*.php'),
+        path.join(__dirname, 'woocommerce/**/*.php'), 
         path.join(__dirname, 'inc/*.php'),
         path.join(__dirname, 'build/js/**/*.js'),
     ]),
     whitelist: ['current-menu-item' ],
     // whitelistPatterns: [/^search-/],
-    whitelistPatternsChildren: [/^search-/,/^rslides_nav/, /^wp-block/,/^marca-social/,/^qubely-/]
+    whitelistPatternsChildren: [/^search-/,/^rslides_nav/, /^wp-block/,/^marca-social/,/^qubely-/,/^products/, /^woocommerce-pagination/]
 });
 
 // if (mix.inProduction()) {
