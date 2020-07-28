@@ -1,14 +1,17 @@
 .products{
-    @apply grid  grid-cols-2 col-gap-6 row-gap-12 ;
+    @apply grid  grid-cols-2 col-gap-3 row-gap-8 ;
     @screen sm{
-        @apply grid  grid-cols-3 ; 
+        @apply  grid-cols-3 col-gap-6 row-gap-12  ; 
     }
     @screen md{
-        @apply grid  grid-cols-4 ; 
+        @apply  grid-cols-4   ; 
     }
     @screen lg{
-        @apply grid  grid-cols-5 ; 
+        @apply  grid-cols-4  ; 
     }
+    @screen xl{
+        @apply  grid-cols-5   ; 
+    } 
     .product{  
         flex-flow: column nowrap; 
         @apply  cursor-pointer flex w-full relative ;
@@ -26,17 +29,22 @@
             @apply  m-auto p-3 w-full h-61 border-gray-300 object-contain ;  
              border-style: solid;
              border-width: 6px;
+             @screen maxsm{
+                @apply  h-48 ;   
+             }
              
-        }   
-        .add_to_cart_button{
-            @apply  mx-4;
-        }
+        }  
         h2{ 
             @apply  pt-4 px-4 m-0 text-base  text-title leading-5  ;  
-            
+            @screen maxsm{
+                @apply  px-2 ;   
+             }
         }
         .price{ 
             @apply my-0  px-4 block   text-title  ; 
+            @screen maxsm{
+                @apply  px-2 ;   
+             }
             ins, del{
                 @apply  block  text-title no-underline ;   
             }
@@ -58,10 +66,13 @@
             }
         }
         .add_to_cart_button{ 
-            @apply text-center leading-4 py-1 px-3 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
+            @apply text-center   mx-4 leading-4 py-1 px-3 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
             width: max-content; 
             max-width: 112px;
             max-width: max-content;
+            @screen maxsm{
+                @apply  mx-4  ;   
+             }
     }
     }
     

@@ -1,8 +1,12 @@
 .header{
-    @apply relative bg-white ;  
+    @apply relative bg-white ; 
+    &-wrap{
+    @apply relative ; 
+
+    } 
     &-wrap::before { 
         content: '';
-        @apply absolute z-30  w-full h-full  block;
+        @apply absolute z-30 bg-white  w-full h-full  block;
         left: 0;
         right: 0;
         top: 0; 
@@ -146,8 +150,8 @@
         transform: rotate(0deg);
         transition: .5s ease-in-out;
         cursor: pointer; 
-        box-shadow: 0 0 0 6px var(--primary);
-        @apply bg-primary-500 ; 
+        box-shadow: 0 0 0 6px var(--secondary);
+        @apply bg-secondary-500 ; 
         span {
             @apply bg-white ;
             display: block;
