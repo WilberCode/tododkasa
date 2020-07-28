@@ -15,8 +15,7 @@
 			</a>
               </div> 
             <div>
-                <ul id="site-header-cart" class="site-header-cart menu">
-                    
+                <ul id="site-header-cart" class="site-header-cart menu"> 
                     <li>
                         <?php //the_widget( 'WC_Widget_Cart', 'title=' ); ?>
                     </li>
