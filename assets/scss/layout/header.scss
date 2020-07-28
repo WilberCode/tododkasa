@@ -2,7 +2,7 @@
     @apply relative bg-white ;  
     &-wrap::before { 
         content: '';
-        @apply absolute z-30  w-full h-full bg-white block;
+        @apply absolute z-30  w-full h-full  block;
         left: 0;
         right: 0;
         top: 0; 

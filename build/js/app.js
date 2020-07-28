@@ -289,7 +289,7 @@ jQuery(function ($) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/src/index.js):\nSyntaxError\n\n(162:3) `@apply` cannot be used with `.flex-column` because `.flex-column` either cannot be found, or its actual definition includes a pseudo-selector like :hover, :active, etc. If you're sure that `.flex-column` exists, make sure that any `@import` statements are being properly processed *before* Tailwind CSS sees your CSS, as `@apply` can only be used for classes in the same CSS tree.\n\n \u001b[90m 160 | \u001b[39m\u001b[33m}\u001b[39m\n \u001b[90m 161 | \u001b[39m\u001b[33m.products\u001b[39m \u001b[33m.product\u001b[39m \u001b[33m{\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 162 | \u001b[39m  \u001b[36m@apply\u001b[39m m-auto p-3 cursor-pointer flex flex-column\u001b[33m;\u001b[39m\n \u001b[90m     | \u001b[39m  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 163 | \u001b[39m\u001b[33m}\u001b[39m\n \u001b[90m 164 | \u001b[39m\u001b[33m.products\u001b[39m \u001b[33m.product\u001b[39m \u001b[33m.woocommerce-LoopProduct-link\u001b[39m \u001b[33m{\u001b[39m\n\n    at runLoaders (C:\\xampp\\htdocs\\wordpress\\cyberweekbyby\\wp-content\\themes\\cyberweekbyby\\node_modules\\webpack\\lib\\NormalModule.js:316:20)\n    at C:\\xampp\\htdocs\\wordpress\\cyberweekbyby\\wp-content\\themes\\cyberweekbyby\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\xampp\\htdocs\\wordpress\\cyberweekbyby\\wp-content\\themes\\cyberweekbyby\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\xampp\\htdocs\\wordpress\\cyberweekbyby\\wp-content\\themes\\cyberweekbyby\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (C:\\xampp\\htdocs\\wordpress\\cyberweekbyby\\wp-content\\themes\\cyberweekbyby\\node_modules\\postcss-loader\\src\\index.js:207:9)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -300,8 +300,8 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\wordpress\cyberweekbyby\wp-content\themes\cyberweekbyby\assets\js\app.js */"./assets/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\wordpress\cyberweekbyby\wp-content\themes\cyberweekbyby\assets\scss\app.scss */"./assets/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\woocommerce\cyberweekbyby\wp-content\themes\cyber\assets\js\app.js */"./assets/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\woocommerce\cyberweekbyby\wp-content\themes\cyber\assets\scss\app.scss */"./assets/scss/app.scss");
 
 
 /***/ })

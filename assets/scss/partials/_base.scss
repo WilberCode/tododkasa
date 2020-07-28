@@ -11,7 +11,7 @@ html {
   // scroll-behavior: smooth;
   // -webkit-font-smoothing: antialiased;
   @screen md {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
  
@@ -41,8 +41,4 @@ h4, h5 {
 p, ul, ol, .wp-block-embed {
   @apply my-5;
 }
-
-code {
-  @apply font-mono inline-block px-1 rounded-sm text-sm align-baseline bg-pink-100 text-pink-600;
-}
-
+ 

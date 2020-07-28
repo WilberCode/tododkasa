@@ -1,42 +1,67 @@
 .products{
-    @apply grid grid-cols-5  gap-6;
-    .product{ 
-        @apply  m-auto p-3 cursor-pointer flex flex-column ;
+    @apply grid  grid-cols-2 col-gap-6 row-gap-12 ;
+    @screen sm{
+        @apply grid  grid-cols-3 ; 
+    }
+    @screen md{
+        @apply grid  grid-cols-4 ; 
+    }
+    @screen lg{
+        @apply grid  grid-cols-5 ; 
+    }
+    .product{  
+        flex-flow: column nowrap; 
+        @apply  cursor-pointer flex w-full relative ;
         .woocommerce-LoopProduct-link {
-            @apply  h-full ; 
+            @apply  h-full ;  
         }
         .onsale{
-            @apply absolute ;  
-            
+            @apply absolute bg-primary-500 text-white py-1 px-2 text-xs ;  
+            top: 14px;
+            left: 0;
+                        
         }
         img{
-            @apply  m-auto p-3 w-full h-58 border-gray-300 object-contain ;  
+            @apply  m-auto p-3 w-full h-61 border-gray-300 object-contain ;  
              border-style: solid;
              border-width: 6px;
              
         }   
-        h2, .add_to_cart_button,.price,ins, del{
-            @apply mx-4;
+        .add_to_cart_button{
+            @apply  mx-4;
         }
         h2{ 
-            @apply  mt-5 text-base opacity-75 text-black ;  
+            @apply  pt-4 px-4 m-0 text-base  text-title leading-5  ;  
             
         }
-        .price{
+        .price{ 
+            @apply my-0  px-4 block   text-title  ; 
             ins, del{
-                @apply  block;   
+                @apply  block  text-title no-underline ;   
             }
-            .woocommerce-Price-amount{
-                @apply   text-xs opacity-75 text-black  ;   
-            } 
-            .woocommerce-Price-currencySymbol{
-                 @apply   text-base opacity-75 text-black  ;   
+            
+            del{
+                @apply leading-3 mt-1  text-xs ;
+               span{
+                @apply   text-xs  text-title ;   
+               }
+            }
+            ins{
+               @apply mb-4 mt-4 leading-4 text-base; 
+               span{
+                 @apply   text-base  text-title  ;
+               }
+            }
+            & > .woocommerce-Price-amount{ 
+                @apply mb-4 mt-4 block leading-4; 
             }
         }
-        .add_to_cart_button{
-
-            @apply  py-1 px-3 text-xs tracking-wide font-black text-red-500 uppercase border border-red-500 inline-block ;  
-        }
+        .add_to_cart_button{ 
+            @apply text-center leading-4 py-1 px-3 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
+            width: max-content; 
+            max-width: 112px;
+            max-width: max-content;
+    }
     }
     
 }

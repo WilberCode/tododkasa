@@ -2,6 +2,12 @@ module.exports = {
     theme: {
         container: {
             padding: '1.2rem',
+            screens: {
+                sm: "100%",
+                md: "100%",
+                lg: "1024px",
+                xl: "1348.14px"
+             }
         },
         extend: {
             spacing: {
@@ -45,10 +51,11 @@ module.exports = {
                 '58': '16rem',
                 '59': '17rem',
                 '60': '18rem',
-                '64': '16rem',
-                '65': '18rem',
-                '66': '19rem',
-                '67': '20.5rem',
+                '61': '19rem',
+                '62': '20rem',
+                '63': '21rem',
+                '64': '22rem',
+                '64': '23rem',
             },
             colors: {
                 link: {
@@ -56,29 +63,27 @@ module.exports = {
                     'hover': '#152268',
                 },
                 transparent: 'transparent',
-                black: '#414042',
-                title:'#58595b',
+                black: '#000',
+                dark: '#211915',
+                title:'#5B5C5B',
                 white: '#fff',
                 url:'#152268',  
                 primary: { 
-                    500: '#61c5d3', 
+                    500: '#BA0B13', 
                 },
                 secondary: { 
-                    500: '#fd7752',  
-                },
-                third: { 
-                    500: '#172069', 
+                    500: '#6DB4D3',  
                 }
             }, 
             fontSize: {
-                xxs: '0.675rem',
-                xs: '0.75rem',
-                sm: '0.875rem',
-                base: '1rem',
-                lg: '1.125rem',
+                xxs: '0.67rem',
+                xs: '0.87rem',
+                sm: '0.93rem',
+                base: ' 1.09rem',
+                lg: '1.12rem',
                 xl: '1.25rem',
                 '2xl': '1.5rem',
-                '3xl': '1.875rem',
+                '3xl': '1.87rem',
                 '4xl': '2.25rem',
                 '5xl': '3rem',
                 '6xl': '4rem',
@@ -104,36 +109,7 @@ module.exports = {
                 'modal': '66rem',
                 full: '100%',
             },
-            fontFamily: {
-                // sans: [
-                //     '-apple-system',
-                //     'BlinkMacSystemFont',
-                //     '"Segoe UI"',
-                //     'Roboto',
-                //     '"Helvetica Neue"',
-                //     'Arial',
-                //     '"Noto Sans"',
-                //     'sans-serif',
-                //     '"Apple Color Emoji"',
-                //     '"Segoe UI Emoji"',
-                //     '"Segoe UI Symbol"',
-                //     '"Noto Color Emoji"',
-                // ],
-                // serif: [
-                //     'Georgia',
-                //     'Cambria',
-                //     '"Times New Roman"',
-                //     'Times',
-                //     'serif',
-                // ],
-                mono: [
-                    'Menlo',
-                    'Monaco',
-                    'Consolas',
-                    '"Liberation Mono"',
-                    '"Courier New"',
-                    'monospace',
-                ],
+            fontFamily: { 
                 roboto: [
                     '"Roboto"',
                     'sans-serif'

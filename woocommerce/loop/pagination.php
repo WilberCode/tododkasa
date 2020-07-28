@@ -1,3 +1,5 @@
+
+ 
 <?php
 /**
  * Pagination - Show numbered pagination for catalog pages
@@ -26,10 +28,10 @@ $format  = isset( $format ) ? $format : '';
 
 if ( $total <= 1 ) {
 	return;
-}
+} 
 ?>
 <nav class="woocommerce-pagination">
-	<?php
+    <?php
 	echo paginate_links(
 		apply_filters(
 			'woocommerce_pagination_args',
@@ -39,13 +41,15 @@ if ( $total <= 1 ) {
 				'add_args'  => false,
 				'current'   => max( 1, $current ),
 				'total'     => $total,
-				'prev_text' => '&larr;',
-				'next_text' => '&rarr;',
+				'prev_text' => 'Prev',
+				'next_text' => 'Next',
 				'type'      => 'list',
 				'end_size'  => 3,
 				'mid_size'  => 3,
 			)
 		)
 	);
+ 
 	?>
-</nav>
+</nav> 
+
