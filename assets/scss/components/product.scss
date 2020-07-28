@@ -26,11 +26,11 @@
                         
         }
         img{
-            @apply  m-auto p-3 w-full h-61 border-gray-300 object-contain ;  
+            @apply  m-auto p-3 w-full h-57 border-gray-300 object-contain ;  
              border-style: solid;
              border-width: 6px;
-             @screen maxsm{
-                @apply  h-48 ;   
+             @screen sm{
+                @apply  h-61 ;   
              }
              
         }  
@@ -71,7 +71,7 @@
             max-width: 112px;
             max-width: max-content;
             @screen maxsm{
-                @apply  mx-4  ;   
+                @apply  mx-2;   
              }
     }
     }
