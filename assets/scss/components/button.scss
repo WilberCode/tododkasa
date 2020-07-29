@@ -1,6 +1,5 @@
-.btn {
-    @apply bg-gray-300 font-bold py-5 px-4 rounded-full inline-block text-base w-full tracking-widest  ;
-    max-width:400px;
+.btn,button {
+    @apply  font-normal py-3 px-5 border-none  inline-block  text-base text-center  ;  
     &:focus{
         @apply shadow-outline  outline-none;
     }

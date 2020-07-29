@@ -3,12 +3,6 @@
 /**
  * Remove top margin from first child and bottom margin from last child.
  */
-@mixin first_last_marginless() {
-  > :first-child {
-    margin-top: 0;
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }
+@mixin btn() {
+  @apply  font-normal py-3 px-5 border-none  inline-block  text-base text-center ; 
 }

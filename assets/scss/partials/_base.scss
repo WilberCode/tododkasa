@@ -8,6 +8,9 @@ html {
   font-size: 12px;
   text-rendering: optimizeLegibility; 
   @apply font-roboto #{!important}; 
+  @screen sm {
+    font-size: 14px;
+  }
   @screen md {
     font-size: 16px;
   }
