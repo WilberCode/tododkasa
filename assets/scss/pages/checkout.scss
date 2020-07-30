@@ -11,6 +11,9 @@
             }
             &-checkout{
                 @apply grid grid-cols-3 gap-10; 
+                .woocommerce-NoticeGroup{
+                    @apply  col-span-3; 
+                }
                 .customer_details_cyber{
                     @apply  col-span-3;
                     @screen md{
