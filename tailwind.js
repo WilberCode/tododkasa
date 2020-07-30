@@ -35,7 +35,7 @@ module.exports = {
                 '34': '9.6rem',
                 '35': '9.8rem',
                 '40': '10rem',
-                '41': '10.2rem',
+                '41': '11rem',
                 '42': '11.2rem', 
                 '44': '11.4rem',
                 '45': '11.5rem',
@@ -72,7 +72,7 @@ module.exports = {
                     500: '#BA0B13', 
                 },
                 secondary: { 
-                    500: '#6DB4D3',  
+                    500: '#00b4d5',  
                 }
             }, 
             fontSize: {

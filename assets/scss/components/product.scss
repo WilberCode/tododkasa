@@ -26,9 +26,10 @@ ul.products{
                         
         }
         img{
-            @apply  m-auto p-3 w-full h-57 border-gray-300 object-contain ;  
+            @apply  m-auto p-3 w-full h-57 object-contain ;  
              border-style: solid;
              border-width: 6px;
+             border-color:#EDEDEF;
              @screen sm{
                 @apply  h-61 ;   
              }
@@ -39,6 +40,10 @@ ul.products{
             @screen maxsm{
                 @apply  px-2 ;   
              }
+        }
+        .star-rating{
+            @apply  hidden;   
+            
         }
         .price{ 
             @apply my-0  px-4 block   text-title  ; 

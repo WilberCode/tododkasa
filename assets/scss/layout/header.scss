@@ -89,15 +89,15 @@
             @apply absolute w-full px-2 py-3 z-20 ;
             background: rgba(white, 0.90);
             @screen maxmd { 
-                left: 0;
-                top: 120px;
+                left: 0; 
+                top: 84px;
                 transform: translateY(-132em);
                 transition: all .6s cubic-bezier(0, 0.88, 1, 1);
                 opacity: 0;
                 @apply h-screen;  
             } 
             @screen maxsm { 
-                top: 84px;
+                top: 47px;
             } 
             @screen md{
                 @apply relative w-auto px-0 py-0  ;
@@ -160,7 +160,7 @@
             width: 50%; 
             opacity: 1;
             transform: rotate(0deg);
-            transition: .25s ease-in-out; 
+            transition: .2s ease-in-out; 
             &:nth-child(even) {
                 left: 50%;
             }
