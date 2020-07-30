@@ -35,8 +35,7 @@
                             }
                         }
                         input{ 
-                                @apply w-full block ;
-                          
+                                @apply w-full block ; 
                         }
                     }
                     .woocommerce-additional-fields{
@@ -60,8 +59,7 @@
                                 font-family: Roboto;
     
                             }
-                        } 
-                        
+                        }  
                     }
                 }
                 .order_review_wrap{
@@ -87,8 +85,7 @@
                                 &.product-total{
                                     @apply  text-right ; 
                                 }
-                            }
-                           
+                            } 
                         }            
                         }
                         tbody{
@@ -100,8 +97,7 @@
                                     }
                                     &.product-total{
                                         @apply  text-right ; 
-                                    }
-                                     
+                                    } 
                                 }
                                 &.order-total{
                                     td{
@@ -139,8 +135,7 @@
                     }
                     .button{ 
                          @include btn;
-                         @apply w-full bg-primary-500 text-white text-lg mt-6 ; 
-                       
+                         @apply w-full bg-primary-500 text-white text-lg mt-6 ;  
                      }
                 }
             } 
