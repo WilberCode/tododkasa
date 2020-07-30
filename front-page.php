@@ -13,10 +13,10 @@ get_header();?>
     <img  class="m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/cyberweekbebemama.png" alt="CYBER
 week ¡todo! 30% off">
  </div>
- <div class="mt-12" >
+ <div class=" mt-8 sm:mt-12" >
     <img  class="m-auto w-27 sm:w-35 md:w-41" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/pigeon.png" alt="Logo Pigeon">
  </div>
- <div class="mt-12">
+ <div class=" mt-8 sm:mt-12">
    <div class="container">  
       <?php echo do_shortcode('[products  limit="15" columns="5"  class="quick-sale"  paginate="true" order="ASC" ]'); ?>
    </div>

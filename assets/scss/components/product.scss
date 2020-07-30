@@ -78,7 +78,12 @@ ul.products{
             @screen maxsm{
                 @apply  mx-2; 
              }
-    }
+        }
+        a.added_to_cart.wc-forward{
+            @apply absolute right-0  bg-primary-500 text-white py-1 px-2;    
+            top: 20px;    
+        }
+    
     }
     
 }
