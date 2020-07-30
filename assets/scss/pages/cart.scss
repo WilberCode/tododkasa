@@ -100,13 +100,13 @@
                                             clip-path: inset(50%);
                                         }
                                         .button{
-                                            @apply  text-white leading-5;
+                                            @apply  text-white leading-6;
                                              background: rgba($primary,0.70) ;
 
                                         }
                                     }
                                     .button{ 
-                                        @apply  text-white leading-5;
+                                        @apply  text-white leading-6;
                                         background: rgba($primary,0.70) ;
                                         @screen maxsm {
                                             @apply  mt-2 ;   

@@ -1,5 +1,5 @@
 .btn,button {
-    @apply  font-normal py-3 px-5 border-none  inline-block  text-base text-center  ;  
+    @apply  font-normal py-3 px-5 border-none  inline-block  text-base text-center leading-6 ;  
     &:focus{
         @apply shadow-outline  outline-none;
     }

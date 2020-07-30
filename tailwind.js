@@ -87,10 +87,9 @@ module.exports = {
                 '4xl': '2.25rem',
                 '5xl': '3rem',
                 '6xl': '4rem',
-                 // leading como participar
-                '4xlp1': '2.50rem',
-                '4xlp2': '2.60rem',
-                '5xlp1': '3.40rem', 
+                 // leading como participar 
+                // '4xlp2': '2.60rem',
+                // '5xlp1': '3.40rem', 
             },
             lineHeight: {
                 tighter: '1.125',
@@ -107,6 +106,7 @@ module.exports = {
                 '5xl': '64rem',
                 '6xl': '72rem',
                 'modal': '66rem',
+                'container': '84.25rem',
                 full: '100%',
             },
             fontFamily: { 
