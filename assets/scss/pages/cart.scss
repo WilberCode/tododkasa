@@ -85,7 +85,7 @@
                                     @apply text-right;
 
                                     .coupon{ 
-                                        @apply float-left;
+                                        @apply float-left hidden;
                                         @screen maxsm {
                                             @apply  float-none ;   
                                          }
