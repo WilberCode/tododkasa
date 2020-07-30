@@ -42,6 +42,7 @@
                         @apply mt-16;
                         .woocommerce-additional-fields__field-wrapper{
                             @apply grid grid-cols-1 col-gap-8  ;
+
                             @screen sm{
                                 @apply  grid-cols-2; 
                             }
@@ -59,6 +60,7 @@
                                 font-family: Roboto;
     
                             }
+                         
                         }  
                     }
                 }
