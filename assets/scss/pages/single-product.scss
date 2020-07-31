@@ -129,10 +129,19 @@
 
                                 }
                                 textarea{
-                                    @apply block mt-2 ; 
+                                    @apply block mt-2 w-full ; 
 
                                 }
 
+                            }
+                            #wp-comment-cookies-consent{
+                                appearance: auto;
+                            }
+                            .comment-form-author, .comment-form-email{
+                                input{
+                                    @apply block mt-2 w-full ; 
+
+                                }
                             }
 
                             .form-submit{
@@ -204,4 +213,7 @@
 
 }
 
- 
+
+input[type="checkbox"]{
+    appearance: auto;
+}

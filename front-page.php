@@ -23,7 +23,7 @@ week ¡todo! 30% off">
  </div>
    <div class="container">
       <div  class="py-20 border border-line " >
-      <h3 class=" legal text-center   text-2xl font-pigeon " >legal y/o condiciones</h3>
+      <h3 class=" legal text-center  text-xl md:text-2xl font-pigeon " >legal y/o condiciones</h3>
    </div>
    </div>
  <div class="text-center" >
