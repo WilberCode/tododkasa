@@ -4,15 +4,16 @@
 // Foundation
 // =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
 html {
-  @apply antialiased ;
+  @apply antialiased tracking-wide ;
   font-size: 13px;
   text-rendering: optimizeLegibility; 
   @apply font-roboto #{!important}; 
+
   @screen sm {
     font-size: 14px;
   }
   @screen md {
-    font-size: 16px;
+    font-size: 16.4px;
   }
 }
  

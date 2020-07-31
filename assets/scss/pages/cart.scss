@@ -5,10 +5,18 @@
             @apply grid grid-cols-4 gap-10;
             &-notices-wrapper{
                 @apply  col-span-4;
-                .woocommerce-message{
-                 @apply   max-w-sm bg-secondary-500 text-white py-2 px-3;
-
-                }
+                
+            }
+            .cart-empty{
+                @apply ml-8  inline-block ; 
+                @screen maxsm{
+                    @apply   ml-0  col-span-4 ;
+                 }
+            }
+            .return-to-shop{
+                @screen maxsm{
+                    @apply     col-span-4  ;
+                 }
             }
             &-cart-form{
                  @apply   col-span-4 ;

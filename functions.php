@@ -124,43 +124,21 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 
  
-
-
-//  function bd_rrp_price_html( $price, $product ) {
-// 	$return_string = '' . $price; 
-// 	return $return_string;
-//   }
-//   add_filter( 'woocommerce_get_price_html', 'bd_rrp_price_html', 100, 2 );
+ 
 
 function bd_rrp_sale_price_html( $price, $product ) {
 	if ( $product->is_on_sale() ) :
 	  $has_sale_text = array(
-		'<del>' => '<del>Precio Regular : ',
+		'<del>' => '<del>Precio Regular: ',
 		'<ins>' => '<ins>Cyber Week: '
 	  );
 	  $return_string = str_replace(array_keys( $has_sale_text ), array_values( $has_sale_text ), $price) ;
 	else :
-	  $return_string =  '<div class="flex py-3 " > Cyber Week:'.$price.'</div>';
-	//   $return_string = 'Cyber Week: ' . $price;
+	  $return_string =  '<div class="flex py-3 font-normal text-base" > Cyber Week:'.$price.'</div>'; 
 	endif;
   
 	return $return_string;
   }
   add_filter( 'woocommerce_get_price_html', 'bd_rrp_sale_price_html', 100, 2 );
 
-
-//   function bd_rrp_price_html( $price, $product ) { 
-// 	$retun_string = 'RRP: ' . $price;
-// 	return $retun_string; 
-// 	}
-//  add_filter( 'woocommerce_get_price_html', 'bd_rrp_price_html', 100, 2 );
-
-// function bd_sale_price_html( $price, $product ) {
-// 	if ( $product->is_on_sale() ) :
-// 	  $return_string = str_replace( '<span>', '<span>Cyber Week: ', $price);
-// 	  return $return_string;
-// 	else : 
-// 	  return  'Cyber Week'.$price;
-// 	endif;
-//   }
-//   add_filter( 'woocommerce_get_price_html', 'bd_sale_price_html', 100, 2 );
+ 

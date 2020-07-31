@@ -67,7 +67,11 @@ module.exports = {
                 dark: '#211915',
                 title:'#5B5C5B',
                 white: '#fff',
-                url:'#152268',  
+                url:'#152268',
+                line: "#b3b2b2", 
+                success:"#0f834d",
+                info:"#3d9cd2",
+                error:"#e2401c",
                 primary: { 
                     500: '#BA0B13', 
                 },
@@ -113,7 +117,8 @@ module.exports = {
                 roboto: [
                     '"Roboto"',
                     'sans-serif'
-                ] 
+                ],
+                pigeon: 'pigeon' 
             }
         },
         screens: {

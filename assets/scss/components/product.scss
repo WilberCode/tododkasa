@@ -56,12 +56,14 @@ ul.products{
             
             del{
                 @apply leading-3 mt-1  text-xs ;
+                font-weight:500;
                span{
-                @apply   text-xs  text-title ;   
+                @apply   text-xs  text-title ; 
+                font-weight:500;  
                }
             }
             ins{
-               @apply mb-4 mt-4 leading-4 text-base; 
+               @apply mb-4 mt-4 leading-4 text-base font-normal; 
                span{
                  @apply   text-base  text-title  ;
                }
@@ -71,7 +73,7 @@ ul.products{
             }
         }
         .add_to_cart_button{ 
-            @apply text-center   mx-4 leading-4 py-1 px-3 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
+            @apply text-center   mx-4 leading-3 py-2 px-4 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
             width: max-content; 
             max-width: 112px;
             max-width: max-content;
