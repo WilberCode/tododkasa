@@ -14,7 +14,7 @@ get_header();?>
 week ¡todo! 30% off">
  </div>
  <div class=" mt-8 sm:mt-12" >
-    <img  class="m-auto w-27 sm:w-35 md:w-41" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/pigeon.png" alt="Logo Pigeon">
+    <img  class="m-auto w-27 sm:w-35 md:w-41" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/logo-pigeon.png" alt="Logo Pigeon">
  </div>
  <div class=" mt-8 sm:mt-12">
    <div class="container">  
