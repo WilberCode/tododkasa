@@ -44,7 +44,7 @@ mix.purgeCss({
     ]),
     whitelist: ['current-menu-item' ],
     // whitelistPatterns: [/^search-/],
-    whitelistPatternsChildren: [/^search-/,/^rslides_nav/, /^wp-block/,/^marca-social/,/^qubely-/,/^woocommerce/,/^products/, /^woocommerce-/,/^table/,/^single-product/,/^woocommerce-account/]
+    whitelistPatternsChildren: [/^search-/,/^rslides_nav/, /^wp-block/,/^marca-social/,/^qubely-/,/^woocommerce/,/^products/, /^woocommerce-/,/^table/,/^single-product/,/^woocommerce-account/,/^post-type-archive-product/]
 });
 
 // if (mix.inProduction()) {
