@@ -26,6 +26,21 @@ get_header( 'shop' );
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
+
+?>
+
+
+<!-- Banner Cybver -->
+<div  style="background: #6db4d3;" >
+<img  class="m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/cyberweekbebemama.png" alt="CYBER
+week ¡todo! 30% off">
+</div>
+<div class=" my-8 sm:my-12" >
+	<img  class="m-auto w-27 sm:w-35 md:w-41" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/logo-pigeon.png" alt="Logo Pigeon">
+</div>
+
+
+<?php 
 do_action( 'woocommerce_before_main_content' );
 
 ?>
@@ -44,6 +59,7 @@ do_action( 'woocommerce_before_main_content' );
 	do_action( 'woocommerce_archive_description' );
 	?>
 </header>
+ 
 <?php
 if ( woocommerce_product_loop() ) {
 

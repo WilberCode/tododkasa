@@ -1,5 +1,8 @@
 // Como participar
- 
+ body{
+    @apply bg-white;
+
+ }
 .post-type-archive-product{
     .site-main{
         @apply max-w-container m-auto;

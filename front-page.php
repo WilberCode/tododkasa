@@ -5,29 +5,43 @@ Template Post Type: post, page, event
 */ 
 get_header();?>
 <?php $file = './tailwind.js';?>   
+ 
+<div class=" px-0">
+<div >
+   <img  class="m-auto" src="http://localhost/woocommerce/cyberweekbyby/wp-content/uploads/2020/07/home-banner.png" alt="Banner mama pigeon">
+</div>  
+</div>
+<div class="container">
+   <div  class="grid grid-cols-3 gap-2 sm:gap-5 mt-10" >
+      <div>
+         <div class="border-2 border-yellow-400 p-4 inline-flex items-center justify-center h-26 sm:h-50 w-full " >
+            <img  class="w-24 sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/logo-pigeon.png" alt="Pigeon">
+         </div>
+         <div class="relative flex justify-center " >
+            <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/biberones.png" alt="Pigeon">
+            <a class="btn font-pigeon tracking-widest absolute bottom-0 mb-10 " href="#">MIRA LAS OFERTAS</a>
+         </div>
 
- 
- 
-   
- <div class=""  style="background: #6db4d3;" >
-    <img  class="m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/cyberweekbebemama.png" alt="CYBER
-week ¡todo! 30% off">
- </div>
- <div class=" mt-8 sm:mt-12" >
-    <img  class="m-auto w-27 sm:w-35 md:w-41" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/pigeon.png" alt="Logo Pigeon">
- </div>
- <div class=" mt-8 sm:mt-12">
-   <div class="container">  
-      <?php echo do_shortcode('[products  limit="15" columns="5"  class="quick-sale"  paginate="true" order="ASC" ]'); ?>
+      </div> 
+      <div>
+         <div class="border-2 border-yellow-400 p-4 inline-flex items-center justify-center h-26 sm:h-50 w-full " >
+            <img  class="w-24 sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/bio-oil.png" alt="Pigeon">
+         </div>
+         <div class="relative flex justify-center " >
+            <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/bio-oil-gestando.png" alt="Pigeon">
+            <a class="btn font-pigeon tracking-widest absolute bottom-0 mb-10 " href="#">MIRA LAS OFERTAS</a>
+         </div>
+      </div>
+      <div>
+         <div class="border-2 border-yellow-400 p-4 inline-flex items-center justify-center h-26 sm:h-50 w-full  " >
+            <img  class="w-24 sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/momma.png" alt="Pigeon">
+         </div>
+         <div class="relative flex justify-center " >
+            <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/bebe.png" alt="Pigeon">
+            <a class="btn font-pigeon tracking-widest absolute bottom-0 mb-10 " href="#">MIRA LAS OFERTAS</a>
+         </div>
+      </div>
    </div>
- </div>
-   <div class="container">
-      <div  class="py-20 border border-line " >
-      <h3 class=" legal text-center  text-xl md:text-2xl font-pigeon " >legal y/o condiciones</h3>
-   </div>
-   </div>
- <div class="text-center" >
-<!-- <img class="m-auto" src="http://localhost/woocommerce/cyberweekbyby/wp-content/uploads/2020/07/cyberweek.png" alt=" cyberweek"> -->
 </div>
 
  
