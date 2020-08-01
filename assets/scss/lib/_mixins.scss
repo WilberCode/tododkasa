@@ -1,0 +1,17 @@
+// Add any custom mixins here
+
+/**
+ * Remove top margin from first child and bottom margin from last child.
+ */
+@mixin btn() {
+  @apply  bg-primary-500 text-white  font-normal py-3 px-5 border-none  inline-block  text-base text-center leading-6 ; 
+}
+@mixin noticeCyberSuccess() {
+  @apply border-l-4 border-success py-3 px-4 shadow; 
+}
+@mixin noticeCyberInfo() {
+  @apply border-l-4 border-info py-3 px-4 shadow; 
+}
+@mixin noticeCyberError() {
+  @apply border-l-4 border-error py-3 px-4 shadow; 
+}
