@@ -2,7 +2,7 @@
  if((is_front_page() ) || is_shop() ){
      ?>
      <div class="container ">
-        <div  class=" py-14 sm:py-20 border border-line px-6 mb-8" >
+        <div  class=" py-10 sm:py-20 border border-line px-6 mb-8" >
             <h3 class=" legal text-center  text-lg sm:text-xl md:text-2xl font-pigeon " >legal y/o condiciones</h3>
         </div>
     </div>  
