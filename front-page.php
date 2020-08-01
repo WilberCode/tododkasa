@@ -7,8 +7,8 @@ get_header();?>
 <?php $file = './tailwind.js';?>   
  
 <div class=" px-0">
-<div >
-   <img  class="m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/home-banner.png" alt="Banner mama pigeon">
+<div class="block" >
+   <img  class="m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/banner-mama-pingeon-cyber-week.png" alt="Banner mama pigeon">
 </div>  
 </div>
 <div class="container">
