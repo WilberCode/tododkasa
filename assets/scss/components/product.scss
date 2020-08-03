@@ -36,7 +36,7 @@ ul.products{
              
         }  
         h2{ 
-            @apply  pt-4 px-4 m-0 text-base  text-title leading-5  ;  
+            @apply  pt-4 px-4 m-0 text-xs font-medium  text-title leading-5  uppercase ;  
             @screen maxsm{
                 @apply  px-2 ;   
              }

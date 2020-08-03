@@ -19,7 +19,7 @@ get_header();?>
          </div>
          <div class=" marcas-image" >
             <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/biberones.png" alt="Pigeon">
-            <a class="marcas-image-link" href="#">MIRA LAS OFERTAS</a>
+            <a class="marcas-image-link" href="categoria-producto/pigeon/">MIRA LAS OFERTAS</a>
          </div>
 
       </div> 
@@ -29,7 +29,7 @@ get_header();?>
          </div>
          <div class=" marcas-image" >
             <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/bio-oil-gestando.png" alt="Pigeon">
-            <a class="marcas-image-link" href="#">MIRA LAS OFERTAS</a>
+            <a class="marcas-image-link" href="categoria-producto/bio-oil/">MIRA LAS OFERTAS</a>
          </div>
       </div>
       <div class="marcas-item" >
@@ -38,7 +38,7 @@ get_header();?>
          </div>
          <div class=" marcas-image" >
             <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/bebe.png" alt="Pigeon">
-            <a class="marcas-image-link" href="#">MIRA LAS OFERTAS</a>
+            <a class="marcas-image-link" href="categoria-producto/momma/">MIRA LAS OFERTAS</a>
          </div>
       </div>
    </div>
@@ -49,7 +49,7 @@ get_header();?>
          </div>
          <div class=" marcas-image" >
             <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/crema.png" alt="Pigeon">
-            <a class="marcas-image-link" href="#">MIRA LAS OFERTAS</a>
+            <a class="marcas-image-link" href="categoria-producto/lansinoh/">MIRA LAS OFERTAS</a>
          </div>
 
       </div> 
@@ -59,7 +59,7 @@ get_header();?>
          </div>
          <div class=" marcas-image" >
             <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/mama-ybebe.png" alt="Pigeon">
-            <a class="marcas-image-link" href="#">MIRA LAS OFERTAS</a>
+            <a class="marcas-image-link" href="categoria-producto/ma/">MIRA LAS OFERTAS</a>
          </div>
       </div>
       <div class="marcas-item" >
@@ -68,7 +68,7 @@ get_header();?>
          </div>
          <div class=" marcas-image" >
             <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/mama-y-bebe-biberon.png" alt="Pigeon">
-            <a class="marcas-image-link" href="#">MIRA LAS OFERTAS</a>
+            <a class="marcas-image-link" href="categoria-producto/deimel/">MIRA LAS OFERTAS</a>
          </div>
       </div>
    </div>
