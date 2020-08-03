@@ -30,15 +30,37 @@ get_header( 'shop' );
 ?>
 
 
-<!-- Banner Cybver -->
 <div  style="background: #6db4d3;" >
 <img  class="m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/cyberweekbebemama.png" alt="CYBER
 week ¡todo! 30% off">
 </div>
+
+ 
 <div class=" my-8 sm:my-12" >
-	<img  class="m-auto w-27 sm:w-35 md:w-41" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/logo-pigeon.png" alt="Logo Pigeon">
+<?php
+
+//--- CATEGORY IMAGE
+// verify that this is a product category page
+if ( is_product_category() ){
+    global $wp_query;
+
+    // get the query object
+    $cat = $wp_query->get_queried_object();
+
+    // get the thumbnail id using the queried category term_id
+    $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true ); 
+
+    // get the image URL
+    $image = wp_get_attachment_url( $thumbnail_id );  
+
+    // print the IMG HTML
+    echo "<img src='{$image}' alt='' class='m-auto w-27 sm:w-35 md:w-41'  />";
+}
+?>
+<!-- Banner Cybver -->
 </div>
 
+<div  class="container pb-10 " >
 
 <?php 
 do_action( 'woocommerce_before_main_content' );
@@ -116,6 +138,8 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-// do_action( 'woocommerce_sidebar' );
+// do_action( 'woocommerce_sidebar' );?>
+</div>
+<?php 
 
 get_footer( 'shop' );

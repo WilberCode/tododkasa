@@ -141,4 +141,12 @@ function bd_rrp_sale_price_html( $price, $product ) {
   }
   add_filter( 'woocommerce_get_price_html', 'bd_rrp_sale_price_html', 100, 2 );
 
- 
+
+  
+//   Elimanar  comentario y valoraciones
+add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
+ function sb_woo_remove_reviews_tab($tabs)
+ {
+ unset($tabs['reviews']);
+ return $tabs;
+ }
