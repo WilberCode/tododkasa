@@ -8,7 +8,7 @@
                 
             }
             .cart-empty{
-                @apply ml-8  inline-block ; 
+                @apply   inline-block ; 
                 @screen maxsm{
                     @apply   ml-0  col-span-4 ;
                  }
