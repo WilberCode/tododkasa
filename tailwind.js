@@ -85,7 +85,7 @@ module.exports = {
                 xxs: '0.67rem',
                 xs: '0.87rem',
                 sm: '0.93rem',
-                base: ' 1.09rem',
+                base: '1rem',
                 lg: '1.12rem',
                 xl: '1.25rem',
                 '2xl': '1.5rem',

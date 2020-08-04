@@ -36,7 +36,7 @@ ul.products{
              
         }  
         h2{ 
-            @apply  pt-4 px-4 m-0 text-xs font-medium  text-title leading-5  uppercase ;  
+            @apply  pt-4 px-4 m-0 text-xs font-normal  text-title leading-5  uppercase ;  
             @screen maxsm{
                 @apply  px-2 ;   
              }
@@ -51,21 +51,22 @@ ul.products{
                 @apply  px-2 ;   
              }
             ins, del{
-                @apply  block  text-title no-underline ;   
+                @apply  block  text-title no-underline font-normal ;   
+                span{
+                    @apply font-normal ;   
+                } 
             }
             
             del{
-                @apply leading-3 mt-1  text-xs ;
-                font-weight:500;
+                @apply leading-3 mt-1  text-xs ; 
                span{
                 @apply   text-xs  text-title ; 
-                font-weight:500;  
                }
             }
             ins{
-               @apply mb-4 mt-4 leading-4 text-base font-normal; 
+               @apply mb-4 mt-4 leading-4 text-base  ;  
                span{
-                 @apply   text-base  text-title  ;
+                 @apply   text-base  text-title  ; 
                }
             }
             & > .woocommerce-Price-amount{ 
