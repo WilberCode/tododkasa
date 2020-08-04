@@ -10,7 +10,8 @@ get_header();?>
 <div class="block" >
    <img  class="m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/banner-mama-pingeon-cyber-week.png" alt="Banner mama pigeon">
 </div>  
-</div>
+</div> 
+
 <div class="container">
    <div  class="grid grid-cols-3 gap-2 sm:gap-5 mt-10 marcas " >
       <div class="marcas-item" >
@@ -72,11 +73,9 @@ get_header();?>
          </div>
       </div>
    </div>
-   <div  class="marcas grid grid-cols-3 gap-2 sm:gap-5 mt-6 sm:mt-14 md:mt-17 " >
-  
-         <div class=" col-start-2 col-end-4 " >
-            <img  class="w-full sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/cyber-week-descuento.png" alt="Pigeon">
-         </div>  
+   <div  class="mt-17 sm:mt-22 mb-14 sm:mb-20" > 
+            <img  class="w-full sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/08/banner-cyber-week-sale.png" alt="Pigeon">
+      
    </div>
 </div>
 
