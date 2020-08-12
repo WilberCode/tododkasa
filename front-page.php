@@ -15,7 +15,7 @@ get_header();?>
 <div class="container">
    <div  class="grid grid-cols-3 gap-2 sm:gap-5 mt-10 marcas " >
       <div class="marcas-item" >
-         <div class=" marcas-logo " >
+         <div class=" marcas-logo">
             <img  class="w-24 sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/logo-pigeon.png" alt="Pigeon">
          </div>
          <div class=" marcas-image" >
