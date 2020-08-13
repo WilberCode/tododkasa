@@ -18,3 +18,12 @@ input[type="checkbox"]{
     appearance: auto !important ;
 }
 /* purgecss end ignore */
+
+
+.woocommerce-privacy-policy-link{
+    @apply text-secondary-500;
+    &:hover{
+     @apply underline ;
+
+    }
+}
