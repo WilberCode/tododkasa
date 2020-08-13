@@ -1,0 +1,14 @@
+
+
+ 
+.woocommerce,main{
+    input, textarea {
+        @apply  text-gray-700 border border-gray-300 rounded py-3 px-4 leading-6;
+    
+
+        &:focus {
+            @apply border-gray-500 bg-white outline-none ;
+        }
+    }
+}
+ 
