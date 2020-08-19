@@ -35,7 +35,7 @@ get_header();?>
       </div>
       <div class="marcas-item" >
          <div class=" marcas-logo " >
-            <img  class="w-24 sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/momma.png" alt="Pigeon">
+            <img  class="w-24 sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/08/momma-1.jpg" alt="Pigeon">
          </div>
          <div class=" marcas-image" >
             <img  class="w-full mt-3" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/bebe.png" alt="Pigeon">
