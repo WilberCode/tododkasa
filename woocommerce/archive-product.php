@@ -29,12 +29,10 @@ get_header( 'shop' );
 
 ?>
 
-
-<div  style="background: #6db4d3;" >
-<img  class="m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/cyberweekbebemama.png" alt="CYBER
-week ¡todo! 30% off">
+ 
+<div  style="background: #00bbd6;" > 
+	<?php  dynamic_sidebar('banner-archive-product') ?>
 </div>
-
  
 <div class=" my-8 sm:my-12" >
 <?php
@@ -54,7 +52,7 @@ if ( is_product_category() ){
     $image = wp_get_attachment_url( $thumbnail_id );  
 
     // print the IMG HTML
-    echo "<img src='{$image}' alt='' class='m-auto w-27 sm:w-35 md:w-41'  />";
+    echo "<img src='{$image}' alt='' class='m-auto w-auto '  />";
 }
 ?>
 <!-- Banner Cybver -->
