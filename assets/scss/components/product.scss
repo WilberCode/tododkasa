@@ -36,7 +36,7 @@ ul.products{
              
         }  
         h2{ 
-            @apply  pt-4 px-4 m-0 text-xs font-normal  text-title leading-5  uppercase ;  
+            @apply  pt-4 px-3 m-0 text-xs font-normal  text-title leading-5  uppercase ;  
             @screen maxsm{
                 @apply  px-2 ;   
              }
@@ -46,7 +46,7 @@ ul.products{
             
         }
         .price{ 
-            @apply my-0  px-4 block   text-title  ; 
+            @apply my-0  px-3 block   text-title  ; 
             @screen maxsm{
                 @apply  px-2 ;   
              }
@@ -74,7 +74,7 @@ ul.products{
             }
         }
         .add_to_cart_button{ 
-            @apply text-center   mx-4 leading-3 py-2 px-4 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
+            @apply text-center   mx-4 leading-3 py-2 px-3 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
             width: max-content; 
             max-width: 112px;
             max-width: max-content;
