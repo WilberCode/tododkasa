@@ -97,26 +97,7 @@ function wph_theme_support() {
 add_action( 'after_setup_theme', 'wph_theme_support' );
 
 
-
-
-//  Menus
-
-// function wph_menus() {
-
-// 	$locations = array(
-// 		'primary'  => __( 'Menu Principal', 'wph' ),
-// 		'expanded' => __( 'Menu Alternativo', 'wph' ),
-// 		'mobile'   => __( 'Menu Mobile', 'wph' ),
-// 		'footer'   => __( 'Menu Footer ', 'wph' ),
-// 		'social'   => __( 'Redes Sociales', 'wph' ),
-// 	);
-
-// 	register_nav_menus( $locations );
-// 	 // register Menu 
-// }
-
-// add_action( 'init', 'wph_menus' );
-
+ 
 
 
 // Widgets
@@ -127,6 +108,15 @@ function wph_front_widgets(){
         'id' =>'footer-info',
         'description'   => 'Informacion legal de la empresa',
         'before_widget' => '<div class="footer-info">',
+		'after_widget'  => '</div>',
+		'before_title' => '<h2 class="hidden">',
+        'after_title'  => '</h2>'
+    ));   
+    register_sidebar(array(
+        'name' => __('Banner en Categoria de Producto'),
+        'id' =>'banner-archive-product',
+        'description'   => 'Banner  de aviso descuentos',
+        'before_widget' => '<div class="banner-archive-product  ">',
 		'after_widget'  => '</div>',
 		'before_title' => '<h2 class="hidden">',
         'after_title'  => '</h2>'
