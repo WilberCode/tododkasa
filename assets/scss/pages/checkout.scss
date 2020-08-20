@@ -22,7 +22,7 @@
                     h3{
                         @apply  mb-5 uppercase font-semibold text-lg ;  
                     }
-                    .woocommerce-billing-fields__field-wrapper{
+                    .woocommerce-billing-fields__field-wrapper, .woocommerce-additional-fields__field-wrapper,.create-account{
                         @apply grid grid-cols-1 col-gap-6 row-gap-5 ;
                         @screen sm{
                             @apply  grid-cols-2; 
@@ -37,32 +37,15 @@
                         input{ 
                                 @apply w-full block ; 
                         }
-                    }
-                    .woocommerce-additional-fields{
-                        @apply mt-16;
-                        .woocommerce-additional-fields__field-wrapper{
-                            @apply grid grid-cols-1 col-gap-8  ;
+                        label{
+                            @apply pb-2 inline-block; 
+                        }
+                        .input-text {
+                            @apply w-full block;
+                            font-family: Roboto;
 
-                            @screen sm{
-                                @apply  grid-cols-2; 
-                            }
-                            .form-row{
-                                @apply my-0 ; 
-                                label{
-                                    @apply pb-2 inline-block; 
-                                }
-                            }
-                            label{
-                                @apply pb-2 inline-block; 
-                            }
-                            .input-text {
-                                @apply w-full block;
-                                font-family: Roboto;
-    
-                            }
-                         
-                        }  
-                    }
+                        }
+                    } 
                 }
                 .order_review_wrap{
                     @apply  col-span-3;  
@@ -124,7 +107,7 @@
                                 }
                                 &.woocommerce-shipping-totals.shipping{
                                     td{
-                                        @apply  pt-2 ;
+                                        @apply  py-2 ;
                                     }
                                     ul li, td{
                                         @apply  leading-6 ;   
@@ -148,7 +131,13 @@
                          @apply w-full bg-primary-500 text-white text-lg mt-6 ;  
                      }
                 }
-            } 
+            }  
+            .create-account{
+                @apply mt-8 ; 
+             
+            }  
         }
     }
 }
+
+ 

@@ -5,8 +5,9 @@
 // =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
 html {
   @apply antialiased tracking-wide ;
-  font-size: 13px;
-  text-rendering: optimizeLegibility; 
+  font-size: 13.5px;
+/*   font-size: 13px;
+ */  text-rendering: optimizeLegibility; 
   @apply font-roboto #{!important}; 
 
   @screen sm {
