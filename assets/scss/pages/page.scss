@@ -17,13 +17,12 @@
 input[type="checkbox"]{
     appearance: auto !important ;
 }
-/* purgecss end ignore */
-
-
-.woocommerce-privacy-policy-link{
+ 
+.woocommerce-privacy-policy-link,.woocommerce-terms-and-conditions-link{
     @apply text-secondary-500;
     &:hover{
      @apply underline ;
 
     }
 }
+/* purgecss end ignore */
