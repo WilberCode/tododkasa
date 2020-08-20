@@ -152,3 +152,68 @@ add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
  }
 
 
+
+
+ //Agregara distritos a Woocommerce
+add_filter( 'woocommerce_states','goowoo_add_states' );
+function goowoo_add_states( $states ){
+	$states['PE'] = array(
+		'LC' =>__('Lima', 'woocommerce'),
+		'AC' =>__('Ancon', 'woocommerce'),
+		'AT' =>__('Ate', 'woocommerce'),
+		'BA' =>__('Barranco', 'woocommerce'),
+		'BR' =>__('Breña', 'woocommerce'), 
+		'CB' =>__('Carabayllo', 'woocommerce'), 
+		'CY' =>__('Chaclacayo', 'woocommerce'), 
+		'CH' =>__('Chorrillos', 'woocommerce'),
+		'CG' =>__('Cieneguilla', 'woocommerce'), 
+		'CO' =>__('Comas', 'woocommerce'),
+		'EA' =>__('El Agustino', 'woocommerce'),
+		'IN' =>__('Independencia', 'woocommerce'),
+		'JM' =>__('Jesus Maria', 'woocommerce'),
+		'LM' =>__('La Molina', 'woocommerce'),
+		'LV' =>__('La Victoria', 'woocommerce'),
+		'LN' =>__('Lince', 'woocommerce'),
+		'LO' =>__('Los Olivos', 'woocommerce'),
+		'LR' =>__('Lurin', 'woocommerce'),
+		'MG' =>__('Magdalena del Mar', 'woocommerce'),
+		'PL' =>__('Pueblo Libre', 'woocommerce'),
+		'MI' =>__('Miraflores', 'woocommerce'),
+		'MI' =>__('Miraflores', 'woocommerce'),
+		'PC' =>__('Pachacamac', 'woocommerce'),
+		'PS' =>__('Pucusana', 'woocommerce'),
+		'PP' =>__('Puente Piedra', 'woocommerce'),
+		'PH' =>__('Punta Hermosa', 'woocommerce'),
+		'PN' =>__('Punta Negra', 'woocommerce'),
+		'RI' =>__('Rimac', 'woocommerce'),
+		'SBT' =>__('San Bartolo', 'woocommerce'),
+		'SB' =>__('San Borja', 'woocommerce'),
+		'SI' =>__('San Isidro', 'woocommerce'),
+		'SJL' =>__('San Juan de Lurigancho', 'woocommerce'),
+		'SJM' =>__('San Juan de Miraflores', 'woocommerce'),
+		'SL' =>__('San Luis', 'woocommerce'),
+		'SP' =>__('San Martin de Porres', 'woocommerce'),
+		'SM' =>__('San Miguel', 'woocommerce'),
+		'SA' =>__('Santa Anita', 'woocommerce'),
+		'SMM' =>__('Santa Maria del Mar', 'woocommerce'), 
+		'STA' =>__('Santa Rosa', 'woocommerce'),
+		'SU' =>__('Santiago de Surco', 'woocommerce'),
+		'SR' =>__('Surquillo', 'woocommerce'),
+		'VS' =>__('Villa El Salvador', 'woocommerce'),
+		'VMT' =>__('Villa Maria del Triunfo', 'woocommerce'), 
+		
+		'CAL' =>__('Callao', 'woocommerce'),
+		'BV' =>__('Bellavista', 'woocommerce'), 
+		'CL' =>__('Carmen de la Legua', 'woocommerce'),
+		'LP' =>__('La Perla', 'woocommerce'),
+		'LPT' =>__('La Punta', 'woocommerce'),
+		'VTL' =>__('Ventanilla', 'woocommerce'),
+		'MP' =>__('Mi Peru', 'woocommerce'),  
+
+ 	);
+ return $states;
+}
+ 
+
+
+
