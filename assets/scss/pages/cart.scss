@@ -164,6 +164,9 @@
                                     @screen maxsm{
                                         @apply  block   ;
                                     }
+                                    ul,p{
+                                        @apply m-0;
+                                    }
                                 }
                                 &.woocommerce-shipping-totals.shipping{
                                     ul{
@@ -173,6 +176,11 @@
                                         }
                                     }
                                 }  
+                                & .woocommerce-shipping-calculator{
+                                    input{
+                                        @apply w-full;
+                                    }
+                                }
                                 &.order-total{
                                     td{
                                         .woocommerce-Price-amount{
