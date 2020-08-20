@@ -122,6 +122,14 @@
                                 td{
                                     @apply  text-right ;  
                                 }
+                                &.woocommerce-shipping-totals.shipping{
+                                    ul{
+                                        li{
+                                            @apply  leading-6 ;
+
+                                        }
+                                    }
+                                }   
                                 &.order-total{
                                     th{
                                         @apply uppercase ;  

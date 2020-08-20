@@ -65,9 +65,22 @@
                         @apply   text-left ; 
 
                      }
-                    td{
-                        @apply  text-right ;  
+                     /* purgecss start ignore */
+                     &:nth-of-type(2){ 
+                        td{
+                            @apply inline-flex  flex-col-reverse w-full leading-5;
+                            & .woocommerce-Price-amount{ 
+                                @apply ml-2 ;  
+                            }
+                            & .shipped_via{  
+                            }
+                        }
                     }
+                    td{
+                        @apply  text-right ;   
+                    }
+                    /* purgecss end ignore */
+
                     &.order-total{
                         th{
                             @apply uppercase ;  
