@@ -47,6 +47,10 @@
                         }
                     } 
                 }
+                .woocommerce-additional-fields__field-wrapper{
+                    @apply mt-8 ; 
+
+                }
                 .order_review_wrap{
                     @apply  col-span-3;  
                     @screen md{
@@ -78,7 +82,7 @@
                                 @apply  border-b border-t border-gray-400 leading-10 ; 
                                 td{
                                     &.product-name{
-                                        @apply  text-left ;
+                                        @apply  text-left leading-6 py-2;
                                     }
                                     &.product-total{
                                         @apply  text-right ; 
