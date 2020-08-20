@@ -123,11 +123,11 @@
                                     @apply  text-right ;  
                                 }
                                 &.woocommerce-shipping-totals.shipping{
-                                    ul{
-                                        li{
-                                            @apply  leading-6 ;
-
-                                        }
+                                    td{
+                                        @apply  pt-2 ;
+                                    }
+                                    ul li, td{
+                                        @apply  leading-6 ;   
                                     }
                                 }   
                                 &.order-total{
