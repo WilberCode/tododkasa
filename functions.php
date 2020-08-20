@@ -175,6 +175,7 @@ function goowoo_add_states( $states ){
 		'LV' =>__('La Victoria', 'woocommerce'),
 		'LN' =>__('Lince', 'woocommerce'),
 		'LO' =>__('Los Olivos', 'woocommerce'),
+		'LG' =>__('Lurigancho', 'woocommerce'),
 		'LR' =>__('Lurin', 'woocommerce'),
 		'MG' =>__('Magdalena del Mar', 'woocommerce'),
 		'PL' =>__('Pueblo Libre', 'woocommerce'),
