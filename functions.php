@@ -217,3 +217,16 @@ function goowoo_add_states( $states ){
 
 
 
+function ace_redirect_pre_checkout() {
+	if ( ! function_exists( 'wc' ) ) return;
+
+	$redirect_page_id = 9;
+	if ( ! is_user_logged_in() && is_checkout() ) {
+		wp_safe_redirect( get_permalink( $redirect_page_id ) );
+		die;
+	} elseif ( is_user_logged_in() && is_page( $redirect_page_id ) ) {
+		wp_safe_redirect( get_permalink( wc_get_page_id( 'checkout' ) ) );
+		die;
+	}
+}
+add_action( 'template_redirect', 'ace_redirect_pre_checkout' );
