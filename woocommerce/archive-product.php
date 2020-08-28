@@ -35,8 +35,7 @@ get_header( 'shop' );
 </div>
  
 <div class=" my-8 sm:my-12" >
-<?php
-
+<?php 
 //--- CATEGORY IMAGE
 // verify that this is a product category page
 if ( is_product_category() ){
@@ -52,7 +51,7 @@ if ( is_product_category() ){
     $image = wp_get_attachment_url( $thumbnail_id );  
 
     // print the IMG HTML
-    echo "<img src='{$image}' alt='' class='m-auto w-auto '  />";
+    echo "<img src='{$image}' alt='' class=' m-auto w-35 sm:w-auto '/>";
 }
 ?>
 <!-- Banner Cybver -->
