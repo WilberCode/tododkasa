@@ -13,7 +13,7 @@
         @screen maxsm {
             @apply  block;
         }
-        a{
+        p{
             @include btn;
             @apply  font-pigeon tracking-widest absolute bottom-0 mb-10; 
             @screen maxmd {
