@@ -54,3 +54,36 @@
         z-index:40; 
     }
 } 
+  /* purgecss start ignore */ 
+.dgwt-wcas-sf{
+    &-wrapp{
+        &::before{
+            content: '';
+            background-image: url(../svg/search.svg);
+            width: 19.724px;
+            height:19.721px;
+            @apply bg-no-repeat absolute; 
+            left: 12px; 
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        svg{
+            @apply  hidden;
+
+        }
+        & input[type=search].dgwt-wcas-search-input{
+           @apply bg-gray-200 border-0 rounded-full font-roboto ;
+           @screen md{
+             height: 42px;
+           }
+           &::placeholder{
+            @apply  not-italic ;
+           }
+           &:focus{
+             @apply border border-gray-200 shadow-none;
+           }
+       }
+   } 
+}  
+ 
+/* purgecss end ignore */

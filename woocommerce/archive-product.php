@@ -48,14 +48,27 @@ if ( is_product_category() ){
     $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true ); 
 
     // get the image URL
-    $image = wp_get_attachment_url( $thumbnail_id );  
-
-    // print the IMG HTML
-    echo "<img src='{$image}' alt='' class=' m-auto w-35 sm:w-auto '/>";
+    $image = wp_get_attachment_url( $thumbnail_id );    
 }
+ // print the IMG HTML
 ?>
+ <div class="container">
+	<div class="md:grid grid-cols-3 " > 
+			<div  class="hidden md:block" ></div>
+			<div> 
+			 	<img src="<?php echo $image?>" alt="categoria" class=" m-auto w-35 sm:w-auto "/>  
+			</div> 
+			<div class=" hidden md:flex justify-end w-full items-center " >
+				<div class="w-63-1" > 
+					<?php echo do_shortcode('[wcas-search-form]'); ?> 
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
 <!-- Banner Cybver -->
-</div>
+
+
 
 <div  class="container pb-10 " >
 
