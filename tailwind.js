@@ -114,6 +114,7 @@ module.exports = {
                 '6xl': '72rem',
                 'modal': '66rem',
                 'container': '84.25rem',
+                'front': '1366px',
                 full: '100%',
             },
             fontFamily: { 
