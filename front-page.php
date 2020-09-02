@@ -8,7 +8,7 @@ get_header();?>
  
 <div class=" px-0">
 <div class="max-w-front m-auto">
-   <img  class="w-full" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/08/cyber-week-bebe-y-mama-banner-2020-1-scaled.jpg" alt="Banner mama pigeon">
+ 	<?php  dynamic_sidebar('home-banner-main') ?> 
 </div>  
 </div> 
 
@@ -84,9 +84,9 @@ get_header();?>
          </a>
       </div>
    </div>
-   <div  class="mt-17 sm:mt-22 mb-14 sm:mb-20" > 
-     <img  class="w-full sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/08/sale-todo-30-off.png" alt="Pigeon"> 
-   </div>
+   <div  class="mt-17 sm:mt-22 mb-14 sm:mb-20" >  
+      <?php  dynamic_sidebar('home-banner-sale') ?>   
+    </div>
 </div>
 
  
