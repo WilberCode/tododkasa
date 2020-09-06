@@ -14,13 +14,6 @@ add_action( 'wp_enqueue_scripts', function () {
 	
 	wp_enqueue_script( 'jquery');
 	wp_enqueue_style( 'app' ); 
-	wp_enqueue_script( 'app' );    
-
-	// Api rest Marcas
-
-	wp_localize_script( 'app', 'ajax_marcas', array(
-        'url'    => rest_url( '/marcas/destacados' ),
-        'nonce'  => wp_create_nonce( 'wp_rest' ),
-    ) ); 
-
+	wp_enqueue_script( 'app' );     
+ 
 } );

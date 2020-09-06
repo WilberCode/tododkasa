@@ -5,7 +5,7 @@ let  menuMobile = ($)=>{
     let navToggle = Id('nav-toggle')   
    $('#nav-toggle').on('click', () => {
         navToggle.classList.toggle('nav-toggle-active')
-        mobileNav.classList.toggle('nav-active')  
+        mobileNav.classList.toggle('nav-active') 
     }) 
     $('#mobile-menu li').on('click',()=>{ 
         navToggle.classList.toggle('nav-toggle-active')

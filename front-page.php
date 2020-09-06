@@ -84,9 +84,9 @@ get_header();?>
          </a>
       </div>
    </div>
-   <div  class="mt-17 sm:mt-22 mb-14 sm:mb-20" >  
-      <?php  dynamic_sidebar('home-banner-sale') ?>   
-    </div>
+   <div  class="mt-17 sm:mt-22 mb-14 sm:mb-20">
+      <?php dynamic_sidebar('home-banner-sale') ?>   
+   </div>
 </div>
 
  
