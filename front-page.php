@@ -62,7 +62,7 @@ get_header();?>
 
       </div> 
       <div class="marcas-item" >
-         <a href="marca/momma/">
+         <a href="marca/ma/">
             <div class=" marcas-logo" >
             <img  class="w-24 sm:w-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/07/ma.png" alt="Pigeon">
          </div>
