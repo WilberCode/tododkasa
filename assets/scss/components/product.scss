@@ -73,7 +73,7 @@ ul.products{
                 @apply mb-4 mt-4 block leading-4; 
             }
         }
-        .add_to_cart_button{ 
+        .add_to_cart_button,.button.product_type_simple{ 
             @apply text-center   mx-4 leading-3 py-2 px-3 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
             width: max-content; 
             max-width: 112px;
@@ -81,6 +81,17 @@ ul.products{
             @screen maxsm{
                 @apply  mx-2; 
              }
+        } 
+        &.outofstock{
+            .add_to_cart_button,.button.product_type_simple{    
+                 font-size: 0;
+                 display: inherit;
+                &::before{
+                    content: 'Ver'; 
+                    @apply text-center   leading-3   text-sm tracking-wide  inline-block ;  
+
+                }
+            }
         }
         a.added_to_cart.wc-forward{
             @apply absolute right-0  bg-primary-500 text-white py-1 px-2;    

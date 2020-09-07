@@ -80,8 +80,10 @@
                             } 
                         }
                         .product_meta{
-                            @apply  mt-3 ;
-
+                            @apply  mt-3 hidden ; 
+                        }
+                        .pwb-single-product-brands.pwb-clearfix{
+                            @apply w-40;
                         }
                       
                     }
@@ -160,8 +162,11 @@
                            
                         }
                     }
+                    .woocommerce-tabs.wc-tabs-wrapper{
+                        @apply hidden;
+                    }
                     .related{
-                        @apply  col-span-3 ;  
+                        @apply  col-span-3 mt-4;  
                     }
                  }
             }
