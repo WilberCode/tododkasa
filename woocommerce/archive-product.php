@@ -27,74 +27,52 @@ get_header( 'shop' );
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
 
-?>
+?> 
 
- 
-<div  style="background: #00bbd6;" > 
-	<?php  dynamic_sidebar('banner-archive-product') ?>
-</div>
- 
-<div class=" my-8 sm:my-12" >
-<?php 
-//--- CATEGORY IMAGE
-// verify that this is a product category page
-if ( is_product_category() ){
-    global $wp_query;
-
-    // get the query object
-    $cat = $wp_query->get_queried_object();
-
-    // get the thumbnail id using the queried category term_id
-    $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true ); 
-
-    // get the image URL
-    $image = wp_get_attachment_url( $thumbnail_id );    
-}
- // print the IMG HTML
-?>
- <div class="container">
-	<div class="md:grid grid-cols-3 " > 
-			<div  class="hidden md:block" ></div>
-			<div> 
-			 	<img src="<?php echo $image?>" alt="categoria" class=" m-auto w-35 sm:w-auto "/>  
-			</div> 
-			<div class=" hidden md:flex justify-end w-full items-center " >
-				<div class="w-63-1" > 
-					<?php echo do_shortcode('[wcas-search-form]'); ?> 
+<?php   
+	if( is_product_taxonomy() ){
+		$brands = wp_get_post_terms( get_the_ID(), 'pwb-brand' ); 
+		foreach( $brands as $brand ) {
+			$attachment_id = get_term_meta( $brand->term_id, 'pwb_brand_image', true );
+			$attachment_src = wp_get_attachment_image_src( $attachment_id,'full' );
+			$brand_banner_id = get_term_meta($brand->term_id, 'pwb_brand_banner', true);
+			$brand_banner_src = wp_get_attachment_image_src( $brand_banner_id,'full' ); ?>  
+		<?php }?> 
+		<!-- Banner marca -->
+		<div  style="background: #00bbd6;" >  
+			<div class="container"> 
+				<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+					<h1 class="woocommerce-products-header__title page-title text-center hidden"><?php woocommerce_page_title(); ?></h1>
+				<?php endif; ?>
+				<img src="<?=$brand_banner_src[0]?>" alt="<?php woocommerce_page_title() ?>">
+			 </div>
+		</div>  
+		<!-- Logo and search form -->
+		<div class="my-8 sm:my-12"> 
+			<div class="container">
+				<div class="md:grid grid-cols-3 " > 
+						<div  class="hidden md:block" ></div>
+						<div>  
+						<img src="<?=$attachment_src[0]?>" class="m-auto w-35 sm:w-auto" alt="<?php woocommerce_page_title()?>">
+						</div> 
+						<div class=" hidden md:flex justify-end w-full items-center " >
+							<div class="w-63-1" > 
+								<?php echo do_shortcode('[wcas-search-form]'); ?> 
+							</div>
+						</div>
 				</div>
 			</div>
+		</div>  
+	<?php } else { ?>  
+		<div  style="background: #00bbd6;" class="mb-12" > 
+			<?php  dynamic_sidebar('banner-archive-product') ?>
 		</div>
-	</div>
- </div>
-<!-- Banner Cybver -->
+	<?php } ?>   
 
-
-
-<div  class="container pb-10 " >
-
-<?php 
-do_action( 'woocommerce_before_main_content' );
-
-?>
-<header class="woocommerce-products-header">
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?>
-
-	<?php
-	/**
-	 * Hook: woocommerce_archive_description.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action( 'woocommerce_archive_description' );
-	?>
-</header>
- 
+<!-- Productos -->
+<div  class="container pb-10 " > 
 <?php
-if ( woocommerce_product_loop() ) {
-
+if ( woocommerce_product_loop() ) { 
 	/**
 	 * Hook: woocommerce_before_shop_loop.
 	 *

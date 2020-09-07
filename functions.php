@@ -25,10 +25,7 @@ $loader->addNamespace( 'WpTailwindCssThemeBoilerplate', get_stylesheet_directory
 View::$view_dir = get_stylesheet_directory() . '/templates/views';
 
 require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
- 
- 
-// Tendenze
-
+  
 // Obtiene la Url del thumbnail     
 function thumbnail_image_url($size){
     global $post; 
@@ -36,68 +33,10 @@ function thumbnail_image_url($size){
     $main_image = wp_get_attachment_image_src($image_id, $size);
     //0 = ruta o url, 1 = width, 2 = height, 3 = boolean
     return $main_image[0];
-}
-
-// Obtiene la Url de carpeta upload
-function tz_get_upload_dir_var( $param, $subfolder = '' ) {
-    $upload_dir = wp_upload_dir();
-    $url = $upload_dir[ $param ];
- 
-    if ( $param === 'baseurl' && is_ssl() ) {
-        $url = str_replace( 'http://', 'https://', $url );
-    }
- 
-    return $url . $subfolder;
-}
- 
-function events_endpoint() {
-	register_rest_route( 'marcas/', 'destacados/', array(
-        'methods'  =>   'GET' ,
-        'callback' => 'get_marcas',
-    )); 
-   
-}
-add_action( 'rest_api_init', 'events_endpoint' );
-  
-function get_marcas($request){ 
-    // $cat = get_category_by_slug( $request['belleza'] );
-	$args = array (
-		'post_type'    		=> 'marca',
-        'posts_per_page'    => -1,
-		'category_name'     => $request['category'],
-		'p' =>$request['post_id']
-	);
-	// Run a custom query
-	$meta_query = new WP_Query($args);
-	
-	if($meta_query->have_posts()) {
-		//Define and empty array
-		$i = 0;
-		$data = array();
-		// Store each post's data in the array
-		while($meta_query->have_posts()) {
-			$meta_query->the_post();
-			$data[$i]['title']          =   get_the_title(); 
-			$data[$i]['thumbnail']      =   get_the_post_thumbnail_url(get_the_ID(), 'full');
-			$data[$i]['link']           =   get_the_permalink(); 
-			$data[$i]['content']        =   get_the_content();  
-			$data[$i]['informations']	=   get_field('marca_informacion');
-			$data[$i]['images']			=   get_field('marca_imagenes'); 
-			$data[$i]['id']             =   get_the_ID();  
-			$i++;
-		}
-		// Return the data 
-		return $data;
-	}else{ 
-		return [];
-	}
 } 
 
-
-function tienda_register_styles() {
-
-	$theme_version = wp_get_theme()->get( 'Version' );
-
+function tienda_register_styles() { 
+	$theme_version = wp_get_theme()->get( 'Version' ); 
 	wp_enqueue_style( 'twentytwenty-style', get_stylesheet_uri(), array(), $theme_version );  
 }
 
@@ -107,25 +46,13 @@ function my_theme_setup() {
 }
 
 add_action( 'after_setup_theme', 'my_theme_setup' );
-
-// add_filter( 'woocommerce_enqueue_styles', 'woocommerce_dequeue_styles' );
-// function woocommerce_dequeue_styles( $enqueue_styles ) {
-// 	unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
-// 	unset( $enqueue_styles['woocommerce-layout'] ); // Remove the layout
-// 	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
-// 	return $enqueue_styles;
-// }
+ 
  
 // Eliminar todos los CSS de WooCommerce de golpe
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
  
-
-
-
- 
- 
-
+// Nuevo formato de precio regular y con descuento 
 function bd_rrp_sale_price_html( $price, $product ) {
 	if ( $product->is_on_sale() ) :
 	  $has_sale_text = array(
@@ -143,7 +70,7 @@ function bd_rrp_sale_price_html( $price, $product ) {
 
 
   
-//   Elimanar  comentario y valoraciones
+//  Elimanar  comentario y valoraciones
 add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
  function sb_woo_remove_reviews_tab($tabs)
  {
@@ -154,7 +81,7 @@ add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
 
 
 
- //Agregara distritos a Woocommerce
+//Agregara distritos a Woocommerce
 add_filter( 'woocommerce_states','goowoo_add_states' );
 function goowoo_add_states( $states ){
 	$states['PE'] = array(
@@ -216,7 +143,7 @@ function goowoo_add_states( $states ){
  
 
 
-
+// Obliga a registrarse antes de finalizar compra
 function ace_redirect_pre_checkout() {
 	if ( ! function_exists( 'wc' ) ) return;
 

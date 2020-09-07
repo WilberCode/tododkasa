@@ -2,15 +2,20 @@
 get_header(); ?> 
 
 <main class="main">
-    <div class="container">
+<div class="container">
     <?php
-    while ( have_posts() ) :
+      if(have_posts()):
+    while ( have_posts() ) :    
         the_post(); 
         the_content(); 
     endwhile;
-    ?>  
-    </div>
-</main> 
+    else:
+        printf('<p>Empty</p>');
+    endif;
+    rewind_posts(); 
 
+    ?>   
+ </div>
+</main>
 <?php
 get_footer();

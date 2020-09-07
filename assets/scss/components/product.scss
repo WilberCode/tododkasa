@@ -1,0 +1,103 @@
+ul.products{
+    @apply grid  grid-cols-2 col-gap-3 row-gap-8 ;
+    @screen sm{
+        @apply  grid-cols-3 col-gap-6 row-gap-12  ; 
+    }
+    @screen md{
+        @apply  grid-cols-4   ; 
+    }
+    @screen lg{
+        @apply  grid-cols-4  ; 
+    }
+    @screen xl{
+        @apply  grid-cols-5   ; 
+    } 
+    .product{  
+        flex-flow: column nowrap; 
+        @apply  cursor-pointer flex w-full relative ;
+        .woocommerce-LoopProduct-link {
+            @apply  h-full ;  
+        }
+        .onsale{
+            @apply absolute bg-primary-500 text-white py-1 px-2 text-xs ;  
+            top: 14px;
+            left: 0;
+            display: none;
+                        
+        }
+        img{
+            @apply  m-auto p-3 w-full h-57 object-contain ;  
+             border-style: solid;
+             border-width: 6px;
+             border-color:#EDEDEF;
+             @screen sm{
+                @apply  h-61 ;   
+             }
+             
+        }  
+        h2{ 
+            @apply  pt-4 px-3 m-0 text-xs font-normal  text-title leading-5  uppercase ;  
+            @screen maxsm{
+                @apply  px-2 ;   
+             }
+        }
+        .star-rating{
+            @apply  hidden;   
+            
+        }
+        .price{ 
+            @apply my-0  px-3 block   text-title  ; 
+            @screen maxsm{
+                @apply  px-2 ;   
+             }
+            ins, del{
+                @apply  block  text-title no-underline font-normal ;   
+                span{
+                    @apply font-normal ;   
+                } 
+            }
+            
+            del{
+                @apply leading-3 mt-1  text-xs ; 
+               span{
+                @apply   text-xs  text-title ; 
+               }
+            }
+            ins{
+               @apply mb-4 mt-4 leading-4 text-base  ;  
+               span{
+                 @apply   text-base  text-title  ; 
+               }
+            }
+            & > .woocommerce-Price-amount{ 
+                @apply mb-4 mt-4 block leading-4; 
+            }
+        }
+        .add_to_cart_button,.button.product_type_simple{ 
+            @apply text-center   mx-4 leading-3 py-2 px-3 text-sm tracking-wide font-bold text-primary-500 uppercase border border-primary-500 inline-block ;  
+            width: max-content; 
+            max-width: 112px;
+            max-width: max-content;
+            @screen maxsm{
+                @apply  mx-2; 
+             }
+        } 
+        &.outofstock{
+            .add_to_cart_button,.button.product_type_simple{    
+                 font-size: 0;
+                 display: inherit;
+                &::before{
+                    content: 'Ver'; 
+                    @apply text-center   leading-3   text-sm tracking-wide  inline-block ;  
+
+                }
+            }
+        }
+        a.added_to_cart.wc-forward{
+            @apply absolute right-0  bg-primary-500 text-white py-1 px-2;    
+            top: 20px;    
+        }
+    
+    }
+    
+}
