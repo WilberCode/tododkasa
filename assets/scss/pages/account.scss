@@ -150,6 +150,80 @@
 
             }
         }
+        h2{
+            @apply mb-2;
+        }
+        mark{
+           @apply bg-transparent font-semibold text-black; 
+        }
+        .woocommerce-table.order_details{ 
+                @apply  w-full ; 
+
+                thead{
+                tr{
+                    th{
+                        &.product-name{
+                            @apply  text-left ;
+                        }
+                        &.product-total{
+                            @apply  text-right ; 
+                        }
+                    } 
+                }            
+                }
+                tbody{
+                & > tr{ 
+                        @apply  border-b border-t border-gray-400 leading-10 ; 
+                        td{
+                            &.product-name{
+                                @apply  text-left leading-6 py-2;
+                            }
+                            &.product-total{
+                                @apply  text-right ; 
+                            } 
+                        }
+                        &.order-total{
+                            td{
+                                .woocommerce-Price-amount{
+                                    @apply font-semibold text-xl text-primary-500 ;  
+                                }
+                            }
+                        }
+                    }
+                }
+                tfoot{
+                    @apply   pt-4 ;  
+                    & > tr{ 
+                        @apply  border-b border-t border-gray-400 ;
+                        line-height: 3.5em; 
+                         th{
+                            @apply   text-left ; 
+
+                         }
+                        td{
+                            @apply  text-right ;  
+                        }
+                        &.woocommerce-shipping-totals.shipping{
+                            td{
+                                @apply  py-2 ;
+                            }
+                            ul li, td{
+                                @apply  leading-6 ;   
+                            }
+                        }   
+                        &.order-total{
+                            th{
+                                @apply uppercase ;  
+                            }
+                            td{
+                                .woocommerce-Price-amount{
+                                    @apply font-semibold text-xl text-primary-500 ;  
+                                }
+                            }
+                        }
+                    } 
+                }  
+        }
     } 
  }
 }
