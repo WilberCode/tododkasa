@@ -52,7 +52,7 @@ add_action( 'after_setup_theme', 'my_theme_setup' );
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
  
-// Nuevo formato de precio regular y con descuento 
+// Nuevo formato de precio regular y descuento 
 function bd_rrp_sale_price_html( $price, $product ) {
 	if ( $product->is_on_sale() ) :
 	  $has_sale_text = array(
@@ -144,16 +144,30 @@ function goowoo_add_states( $states ){
 
 
 // Obliga a registrarse antes de finalizar compra
-function ace_redirect_pre_checkout() {
-	if ( ! function_exists( 'wc' ) ) return;
+  add_action('template_redirect','check_if_logged_in');
+  function check_if_logged_in()
+  {
+	  $pageid = 8; // your checkout page id
+	  if(!is_user_logged_in() && is_page($pageid))
+	  {
+		  $url = add_query_arg(
+			  'redirect_to',
+			  get_permalink($pagid),
+			  site_url('/mi-cuenta/') // your my acount url
+		  );
+		  wp_redirect($url);
+		  exit;
+	  }
+	  if(is_user_logged_in())
+	  {
+	  if(is_page(9))//my-account page id
+	  {
 
-	$redirect_page_id = 9;
-	if ( ! is_user_logged_in() && is_checkout() ) {
-		wp_safe_redirect( get_permalink( $redirect_page_id ) );
-		die;
-	} elseif ( is_user_logged_in() && is_page( $redirect_page_id ) ) {
-		wp_safe_redirect( get_permalink( wc_get_page_id( 'checkout' ) ) );
-		die;
-	}
-}
-add_action( 'template_redirect', 'ace_redirect_pre_checkout' );
+		  $redirect = $_GET['redirect_to'];
+		  if (isset($redirect)) {
+		  echo '<script>window.location.href = "'.$redirect.'";</script>';
+		  }
+
+	  }
+	  }
+  }   
