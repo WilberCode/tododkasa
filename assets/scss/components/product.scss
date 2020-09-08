@@ -87,16 +87,10 @@ ul.products{
                  font-size: 0;
                  display: inherit;
                 &::before{
-                    content: 'Ver'; 
-                    @apply text-center   leading-3   text-sm tracking-wide  inline-block ;  
+                    content:'Agotado'; 
+                    @apply text-center leading-3  text-sm tracking-wide  inline-block;  
 
-                }
-                &::after{
-                    content: 'Agotado'; 
-                    @apply text-center   leading-3   text-sm tracking-wide  inline-block absolute  bg-red-700 text-white left-0 p-2 ;  
-                    top: 20px;
-
-                }
+                } 
             }
         }
         a.added_to_cart.wc-forward{
