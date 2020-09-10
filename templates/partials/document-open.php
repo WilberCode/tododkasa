@@ -41,7 +41,7 @@ Meat Fest, Carnes, Gourmet, Piel Seca, Experiencia, Vinos, Meditación">
     <?php } ?>
 
     <?php if(is_product_taxonomy('bio-oil')){?>
-        <!-- Facebook Pixel Code -->
+       <!-- Facebook Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -51,11 +51,11 @@ Meat Fest, Carnes, Gourmet, Piel Seca, Experiencia, Vinos, Meditación">
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2685036135041369');
+        fbq('init', '342332990511794');
         fbq('track', 'PageView');
         </script>
         <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2685036135041369&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=342332990511794&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Facebook Pixel Code -->
         
