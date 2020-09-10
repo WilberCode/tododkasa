@@ -4,6 +4,7 @@
 @import "~tailwindcss/utilities";  
 // Custom styles 
 @import "lib/font"; 
+@import "lib/fontawesome/css/all.min.scss"; 
 @import "partials/base";
 @import "partials/variables";
 @import "partials/hacks"; 
@@ -31,5 +32,4 @@
 @import "pages/archive-product";  
 @import "pages/privacy-policy";  
 @import "pages/order-received";  
- 
  
