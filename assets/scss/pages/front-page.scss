@@ -31,3 +31,15 @@
     color: #1D1D1B;
 }
 
+body{
+    overflow-y: hidden;
+}
+.overlay{
+    z-index: 800000;
+    &-body{
+        
+    }
+    img{
+        max-width: 858.9146px;
+    }
+}
