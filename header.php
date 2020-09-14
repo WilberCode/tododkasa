@@ -1,6 +1,14 @@
 <?php get_template_part( 'templates/partials/document-open' ); ?> 
 <!-- Site header markup goes here --> 
  
+<div class="overlay fixed w-full h-full py-4 sm:py-8 md:py-17 px-6 sm:px-10 md:px-20 ">
+    <div class="overlay-body h-full  bg-white text-center flex items-center justify-center p-10 sm:p-20 ">
+        <div>
+        <img class="w-full m-auto" src="https://cyberweekbyby.feriasdigitales.pe/wp-content/uploads/2020/09/aviso1.png" alt="Aviso cyber week">
+        </div>
+    </div>
+ </div>
+
  <header class=" bg-white header">
     <div class="bg-dark h-8 sm:h-12 w-full relative z-40" >    
           
