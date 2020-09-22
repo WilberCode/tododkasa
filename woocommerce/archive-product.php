@@ -46,7 +46,7 @@ get_header( 'shop' );
 				<?php endif; ?>
 				<img src="<?=$brand_banner_src[0]?>" alt="<?php woocommerce_page_title() ?>">
 			 </div>
-		</div>  
+		</div>
 		<!-- Logo and search form -->
 		<div class="my-8 sm:my-12"> 
 			<div class="container">
