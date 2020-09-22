@@ -9,9 +9,12 @@
         }
     }
     &-image{
-        @apply relative flex justify-center;
+        @apply relative flex justify-center mt-3;
         @screen maxsm {
             @apply  block;
+        }
+        img{
+            @apply w-full;
         }
         p{
             @include btn;
@@ -32,14 +35,23 @@
 }
 
 body{
-    overflow-y: hidden;
+   overflow-y: hidden;
 }
-.overlay{
+.overlay{ 
     z-index: 800000;
     &-body{
         
     }
     img{
-        max-width: 858.9146px;
+        max-width: 758.9146px;
+        @media (max-width:1700px){
+            max-width: 600px; 
+        }
+        @media (max-width:1366px){
+            max-width: 560px; 
+        }
+        @screen maxl{
+             max-width: 500px; 
+        }
     }
 }
