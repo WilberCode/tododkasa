@@ -135,7 +135,7 @@ function goowoo_add_states( $states ){
 		'LP' =>__('La Perla', 'woocommerce'),
 		'LPT' =>__('La Punta', 'woocommerce'),
 		'VTL' =>__('Ventanilla', 'woocommerce'),
-		'MP' =>__('Mi Peru', 'woocommerce'),  
+		'MP' =>__('Mi Peru', 'woocommerce'),
 
  	);
  return $states;
