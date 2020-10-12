@@ -1,8 +1,7 @@
 .header{
     @apply relative bg-white shadow ; 
     &-wrap{
-    @apply relative ; 
-
+    @apply relative ;  
     } 
     &-wrap::before { 
         content: '';
@@ -69,7 +68,7 @@
                     }
                 }
             }
-        } 
+        }  
         & .current-menu-item{
             a::before{
                 @apply block #{!important}; 
@@ -238,3 +237,50 @@
 
 }
 
+/* Menu width icons */
+/* purgecss start ignore */ 
+ .menu-item{
+    &-account,&-logout{
+        a{
+            @apply flex flex-row-reverse; 
+        }
+    }
+    &-account{
+        a{ 
+            &::after{
+                @include fontawasome(\f007,400);
+                @apply mr-1;
+            }
+        }
+    }
+    &-logout{ 
+        a{
+            &::after{
+                @include fontawasome(\f2f5,800);
+                @apply mr-1;
+            } 
+        }
+    }
+        
+}
+
+.mobile-nav{
+    .menu-item{ 
+        &-account{
+            a{ 
+                &::after{ 
+                    @apply ml-1;
+                }
+            }
+        }
+        &-logout{ 
+            a{
+                &::after{ 
+                    @apply ml-1;
+                } 
+            }
+        }
+            
+    }
+}
+  /* purgecss end ignore */
