@@ -34,11 +34,15 @@
     color: #1D1D1B;
 }
 
-body{
-   overflow-y: hidden;
-}
+
 .overlay{ 
+    display: block;
     z-index: 800000;
+    @at-root{
+        body{
+            overflow-y: hidden;
+        }
+    }
     &-body{
         
     }
