@@ -2,7 +2,7 @@
 <!-- Site header markup goes here --> 
  
  
-<?php if(!current_user_can('administrator')) { ?>
+<?php if(is_home() ||  is_front_page()) { ?>
     <div class="overlay fixed w-full h-full py-6 sm:py-8 md:py-17 px-6 sm:px-10 md:px-20 ">
     <div class="overlay-body h-full  bg-white text-center flex items-center justify-center p-10 sm:p-20 ">
         <div>
