@@ -11,12 +11,12 @@
  </div>  --> 
     
  <header class=" bg-white header">
-    <div class="bg-dark h-8 sm:h-12 w-full relative z-40" >    
+   <!--  <div class="bg-dark h-8 sm:h-12 w-full relative z-40" >    
           
-    </div>
+    </div> -->
     <div class="header-wrap container m-auto flex h-17  sm:h-24 justify-between items-center "> 
         <div class=" flex relative z-40 items-center "> 
-                <div class=" max-w-md md:hidden" > 
+                <div class=" hidden" > 
                     <?php echo do_shortcode('[wcas-search-form id="wilberparion"]'); ?> 
                 </div>
          </div>

@@ -1,0 +1,13 @@
+:root{
+    // Colors
+    --primary:#de496e;
+    --secondary:#de496e;
+ 
+}
+
+$primary:#de496e;
+$secondary:#de496e;
+
+.container{
+@apply m-auto;
+}
