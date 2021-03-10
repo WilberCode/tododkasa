@@ -28,6 +28,26 @@ get_header( 'shop' );
  */
 
 ?> 
+<div class="grid grid-cols-2 gap-4 sm:gap-6 max-w-front m-auto ">
+<?php   
+	if( is_product_taxonomy() ){  
+		$current_eixo = get_queried_object_id();
+
+		$args = array(
+			'taxonomy' => 'pwb-brand',
+			'exclude' => $current_eixo
+		);
+         $brands = get_terms($args); 
+            foreach( $brands as $brand ) {
+               $attachment_id = get_term_meta( $brand->term_id, 'pwb_brand_image', true );
+               $attachment_id = get_term_meta( $brand->term_id, 'pwb_brand_name', true );  ?>     
+				<a   href="<?=get_site_url().'/marca/'.$brand->slug ?>" class=" py-6 sm:py-14 md:py-20  px-6 sm:px-10 text-center bg-primary-500 text-white" >
+					<h2  class="text-center text-sm sm:text-2xl  uppercase font-semibold " > VER MÁS <?php echo  $brand->name; ?> </h2>
+				</a>     
+		<?php } ?>  
+	<?php } else { ?>   
+	<?php } ?>   
+</div> 
 
 <?php   
 	if( is_product_taxonomy() ){
@@ -39,7 +59,7 @@ get_header( 'shop' );
 			$brand_banner_src = wp_get_attachment_image_src( $brand_banner_id,'full' ); ?>  
 		<?php }?> 
 		<!-- Banner marca --> 
-			<div class="max-w-front m-auto mb-10"> 
+			<div class="max-w-front m-auto mb-10 mt-4"> 
 				<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 					<h1 class="woocommerce-products-header__title page-title text-center hidden"><?php woocommerce_page_title(); ?></h1>
 				<?php endif; ?>
