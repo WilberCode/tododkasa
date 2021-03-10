@@ -38,39 +38,23 @@ get_header( 'shop' );
 			$brand_banner_id = get_term_meta($brand->term_id, 'pwb_brand_banner', true);
 			$brand_banner_src = wp_get_attachment_image_src( $brand_banner_id,'full' ); ?>  
 		<?php }?> 
-		<!-- Banner marca -->
-		<div  style="background: #00bbd6;" >  
-			<div class="container"> 
+		<!-- Banner marca --> 
+			<div class="max-w-front m-auto mb-10"> 
 				<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 					<h1 class="woocommerce-products-header__title page-title text-center hidden"><?php woocommerce_page_title(); ?></h1>
 				<?php endif; ?>
 				<img src="<?=$brand_banner_src[0]?>" alt="<?php woocommerce_page_title() ?>">
 			 </div>
-		</div>
-		<!-- Logo and search form -->
-		<div class="my-8 sm:my-12"> 
-			<div class="container">
-				<div class="md:grid grid-cols-3 " > 
-						<div  class="hidden md:block" ></div>
-						<div>  
-						<img src="<?=$attachment_src[0]?>" class="m-auto w-35 sm:w-auto" alt="<?php woocommerce_page_title()?>">
-						</div> 
-						<div class=" hidden md:flex justify-end w-full items-center " >
-							<div class="w-63-1" > 
-								<?php echo do_shortcode('[wcas-search-form]'); ?> 
-							</div>
-						</div>
-				</div>
-			</div>
-		</div>  
+	 
+	 
 	<?php } else { ?>  
-		<div  style="background: #00bbd6;" class="mb-12" > 
-			<?php  dynamic_sidebar('banner-archive-product') ?>
+		<div class="mb-12  " > 
+			<?php//  dynamic_sidebar('banner-archive-product') ?>
 		</div>
 	<?php } ?>   
 
 <!-- Productos -->
-<div  class="container pb-10 " > 
+<div  class="max-w-products-grid m-auto pb-10 px-4 xl:px-0   " > 
 <?php
 if ( woocommerce_product_loop() ) { 
 	/**

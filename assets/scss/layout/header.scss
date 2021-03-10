@@ -46,7 +46,7 @@
                 @apply block h-full flex items-center text-black relative font-semibold text-xs; 
                 &::before{
                     content: '';
-                    @apply bg-secondary-500 absolute hidden;
+                    @apply bg-primary-500 absolute hidden;
                     width: 100%;
                     height: 3px;
                     left: 0;
@@ -150,7 +150,7 @@
         transition: .5s ease-in-out;
         cursor: pointer; 
         box-shadow: 0 0 0 6px var(--secondary);
-        @apply bg-secondary-500 ; 
+        @apply bg-primary-500 ; 
         span {
             @apply bg-white ;
             display: block;

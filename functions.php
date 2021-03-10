@@ -57,11 +57,11 @@ function bd_rrp_sale_price_html( $price, $product ) {
 	if ( $product->is_on_sale() ) :
 	  $has_sale_text = array(
 		'<del>' => '<del>Precio Regular: ',
-		'<ins>' => '<ins>Cyber Week: '
+		'<ins>' => '<ins>Cyber: '
 	  );
 	  $return_string = str_replace(array_keys( $has_sale_text ), array_values( $has_sale_text ), $price) ;
 	else :
-	  $return_string =  '<div class="flex py-3 font-normal text-base" > Cyber Week:'.$price.'</div>'; 
+	  $return_string =  '<div class="flex py-3 font-normal text-base" > Cyber:'.$price.'</div>'; 
 	endif;
   
 	return $return_string;
