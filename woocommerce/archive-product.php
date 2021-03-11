@@ -64,8 +64,7 @@ get_header( 'shop' );
 					<h1 class="woocommerce-products-header__title page-title text-center hidden"><?php woocommerce_page_title(); ?></h1>
 				<?php endif; ?>
 				<img src="<?=$brand_banner_src[0]?>" alt="<?php woocommerce_page_title() ?>">
-			 </div>
-	 
+			 </div> 
 	 
 	<?php } else { ?>  
 		<div class="mb-12  " > 

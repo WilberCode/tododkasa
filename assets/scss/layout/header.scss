@@ -137,6 +137,9 @@
         display: block;
     }  
     &-toggle {
+        &:focus{
+            box-shadow: 0 0 0 6px var(--secondary);
+        }
         &-wrap { 
             height: 28px; 
             @apply relative z-50 mr-2 ;
