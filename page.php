@@ -12,8 +12,7 @@ get_header(); ?>
     else:
         printf('<p>Empty</p>');
     endif;
-    rewind_posts(); 
-
+    rewind_posts();  
     ?>   
  </div>
 </main>
