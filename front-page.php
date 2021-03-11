@@ -34,12 +34,7 @@ get_header();?>
 </div>
  
 <div class=" max-w-products-grid mt-10 sm:mt-20 m-auto px-4 xl:px-0 " >
-   <?php //echo do_shortcode('[products   visibility="visible"]');?>
-   <?php echo do_shortcode('[yith_most_viewed_products title=" " num_columns="4"    num_post="12"]
-');?>
-   <?php   //echo do_shortcode('[wmvp_most_viewed_products  ]');?>
-
-
+   <?php echo do_shortcode('[recent_products category="producto" limit="12"  order="ASC"  ]');?> 
  
 </div>
 <div class="h-20" ></div> 
