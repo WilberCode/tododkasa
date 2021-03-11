@@ -1,0 +1,9 @@
+ 
+
+ .marcas{ 
+     &-image{ 
+        img{
+            @apply w-full max-w-image ;
+        }
+     } 
+ }
