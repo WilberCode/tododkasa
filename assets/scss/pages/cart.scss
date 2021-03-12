@@ -175,6 +175,17 @@
 
                                         }
                                     }
+                                    td{
+                                        font-size: 0; 
+                                        text-align: right; 
+                                        ul,p{
+                                            display: none;
+                                        }
+                                        &::after{ 
+                                            content: 'Gratis'; 
+                                            @apply text-base;
+                                        }
+                                    }
                                 }  
                                 & .woocommerce-shipping-calculator{
                                     input{
@@ -197,6 +208,7 @@
                         @apply w-full bg-primary-500 text-white text-lg mt-6 ; 
                        }
                     }
+ 
                 }
             }
         }
