@@ -175,6 +175,7 @@
 
                                         }
                                     }
+                                    /* purgecss start ignore */
                                     td{
                                         font-size: 0; 
                                         text-align: right; 
@@ -186,6 +187,8 @@
                                             @apply text-base;
                                         }
                                     }
+                                    /* purgecss end ignore */ 
+                                   
                                 }  
                                 & .woocommerce-shipping-calculator{
                                     input{
