@@ -1,0 +1,13 @@
+
+.footer{ 
+    &-info{
+        p{
+            @apply text-white text-xs font-medium text-justify text-gray-400 tracking-wider;
+        }
+        .menu{
+            li{
+                @apply mb-2;
+            }
+        }
+    }
+}

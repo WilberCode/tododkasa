@@ -56,12 +56,12 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 function bd_rrp_sale_price_html( $price, $product ) {
 	if ( $product->is_on_sale() ) :
 	  $has_sale_text = array(
-		'<del>' => '<del>Precio Regular: ',
-		'<ins>' => '<ins>Cyber: '
+		'<del>' => '<del>Precio Regular &nbsp;: ',
+		'<ins>' => '<ins>Cyber: &nbsp;'
 	  );
 	  $return_string = str_replace(array_keys( $has_sale_text ), array_values( $has_sale_text ), $price) ;
 	else :
-	  $return_string =  '<div class="flex py-3 font-normal text-base" > Cyber:'.$price.'</div>'; 
+	  $return_string =  '<div class="flex py-3 font-normal text-base" > Cyber:&nbsp; '.$price.'</div>'; 
 	endif;
   
 	return $return_string;
@@ -146,4 +146,37 @@ function goowoo_add_states( $states ){
 	  }
 	  }
   }   
+ 
+
+  /* REMOVE DASHICONS - START */
+add_action( 'wp_print_styles', 'zgwd_dequeue_styles' );
+function zgwd_dequeue_styles() { 
+    if ( ! is_user_logged_in() ) {
+        wp_dequeue_style( 'dashicons' );
+        wp_deregister_style( 'dashicons' );
+    }
+}
+/* REMOVE DASHICONS - END */
+  
+
+/* UPDATE CART CONTENT COUNT - START */
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+	global $woocommerce;
+
+	ob_start();
+
+	?>
+	<a  class="cart-customlocation " href="<?php echo wc_get_cart_url(); ?>"  title="<?php _e( 'View your shopping cart' ); ?>" > 
+		<div class="relative" >
+			<svg  class="cart-icon" ><use href="<?php echo get_bloginfo('template_directory').'/build/svg/icons.svg#cart'; ?>"></svg>
+			<span class="cart-count" > <?php echo WC()->cart->get_cart_contents_count();  ?> </span>
+		</div>
+	</a> 
+	<?php
+	$fragments['a.cart-customlocation'] = ob_get_clean();
+	return $fragments;
+} 
+/* UPDATE CART CONTENT COUNT - END */
  
