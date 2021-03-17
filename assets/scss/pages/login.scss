@@ -1,8 +1,15 @@
 .woocommerce-account{
-    
+    .woocommerce{
+        .woocommerce-ResetPassword{
+            @apply py-8;
+            .form-row{
+                @apply inline-flex flex-col  ;
+            }
+        }
+    }
     h2{
         @apply  text-center pt-8  uppercase font-semibold text-lg ;   
-    }
+    } 
     .col-1 h2{
         font-size: 0;
         &::before{
