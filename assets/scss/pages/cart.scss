@@ -1,3 +1,6 @@
+ 
+
+
 .woocommerce-cart{  
     .main{
         @apply pt-10 pb-10;
@@ -43,8 +46,7 @@
                     tbody{
                         @apply  pt-6 ;
                         @screen maxsm {
-                            @apply block; 
-                              
+                            @apply block;  
                          }
                         tr{
                             @apply  border-t border-gray-400 ;
@@ -59,18 +61,32 @@
                                      
                                  }
                                 &.product-remove a{
-                                    @apply text-primary-500 text-lg w-5 h-5 inline-flex items-center justify-center rounded-full border border-primary-500; 
+                                    @apply   flex items-center justify-center text-transparent rounded-full  w-10 h-10  ;
+                                    &:hover{
+                                        @apply bg-gray-200;
+                                        @include animation;
+                                    }
+                                    &::before{
+                                        content: '';
+                                        @apply absolute w-6 h-6 ; 
+                                        background-image: url(../svg/remove.svg);
+                                        background-size: 100%;
+                                    }
                                 }
                                 img{
-                                    @apply p-4 w-32;
+                                    @apply p-4 w-40;
                                     @screen maxsm {
-                                        @apply  mx-auto ;  
-                                          
+                                        @apply  mx-auto;  
+                                        @apply  w-32;
                                      }
                                     
                                 }
                                 &.product-name{
-                                    @apply text-lg font-medium ; 
+                                    @apply font-medium ; 
+                                    @screen md{
+                                        @apply  text-sm ; 
+ 
+                                    }
 
                                 }
                                 .quantity{
@@ -90,7 +106,7 @@
                                     }
                                 }
                                 &.actions{
-                                    @apply text-right;
+                                    @apply text-right hidden;
 
                                     .coupon{ 
                                         @apply float-left hidden;
@@ -114,8 +130,7 @@
                                         }
                                     }
                                     .button{ 
-                                        @apply  text-white leading-6;
-                                        background: rgba($primary,0.70) ;
+                                        @apply  text-primary-500 leading-6 border-primary-500 border border-solid bg-white ; 
                                         @screen maxsm {
                                             @apply  mt-2 ;   
                                          }
@@ -211,7 +226,6 @@
                         @apply w-full bg-primary-500 text-white text-lg mt-6 ; 
                        }
                     }
- 
                 }
             }
         }

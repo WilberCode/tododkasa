@@ -1,7 +1,8 @@
 .header{
-    @apply relative bg-white shadow ; 
+    @apply fixed w-full top-0 left-0 right-0 z-50 bg-white shadow ; 
     &-wrap{
-    @apply relative ;  
+       @apply relative ; 
+       height: var(--header-height);
     } 
     &-wrap::before { 
         content: '';
@@ -56,11 +57,10 @@
                 }
             }
            & >.sub-menu{
-                @apply absolute bg-white z-20 overflow-hidden shadow py-3 ;
+                @apply absolute bg-white z-20 overflow-hidden shadow py-3 hidden mt-0 ;
                 border-radius:0 6px 6px 6px ; 
                 max-width: 430px;
-                top:32px; 
-                display: none;
+                top:var(--header-height);  
                 li{
                     a{
                        @apply text-black py-2 px-6 block  text-sm;
@@ -77,32 +77,43 @@
     }
 }
 
+/* Menu width icons */
+/* purgecss start ignore */ 
+.menu-item{
+    &-account,&-logout{
+        @apply flex items-center #{!important} ;   
+        a{ 
+            @apply flex flex-no-wrap ;
+            svg{
+                @apply w-6 h-6 text-primary-500 fill-current mr-1 ;
+            } 
+        }
+    } 
+        
+} 
+  /* purgecss end ignore */
+
 .mobile{  
     &-nav{
-        @apply w-full mt-14 ;
-
-         @screen md {
-             @apply hidden;
-         }
+        @apply w-full mt-14 ; 
+        @screen md {
+            @apply hidden;
+        }
         &-wrap{
             @apply absolute w-full px-2 py-3 z-20 ;
             background: rgba(white, 0.90);
-            @screen maxmd { 
-                left: 0; 
-                top: 84px;
-                transform: translateY(-132em);
-                transition: all .6s cubic-bezier(0, 0.88, 1, 1);
-                opacity: 0;
-                @apply h-screen;  
-            } 
-            @screen maxsm { 
-                top: 47px;
-            } 
+            left: 0; 
+            transform: translateY(-132em);
+            transition: all .6s cubic-bezier(0, 0.88, 1, 1);
+            opacity: 0;
+            @apply h-screen;   
+            top:var(--header-height);    
             @screen md{
                 @apply relative w-auto px-0 py-0  ;
                 top:0;
             } 
         }
+        
 
     }
     &-menu{ 
@@ -111,20 +122,34 @@
             @apply  hidden;
         }
         li{ 
-            a{
-                @apply py-3 text-black block text-center text-base font-bold ; 
-                border-bottom: 1px solid rgba(white, 0.1);  
-                &:hover{
-                 @apply underline ; 
-                    
-                }
-            } 
+            
              &:last-child > a{
                      border-bottom: none; 
-             } 
+             }
+             &.menu-item-account,&.menu-item-logout{
+                @apply flex items-center  #{!important} ;   
+                a{ 
+                    @apply  flex flex-no-wrap w-full ;
+                    svg{
+                        @apply w-6 h-6 text-primary-500 fill-current mr-1 ;
+                    } 
+                    &:hover svg{
+                        @apply text-white;
+                    }
+                }
+            } 
+            a{
+                @apply py-3 px-2 text-black block  text-lg font-bold rounded-md ; 
+                border-bottom: 1px solid rgba(white, 0.1);   
+                &:hover{
+                   @apply underline bg-primary-500 text-white ;  
+                }
+                
+            } 
         }
        
     }
+    
 }
 
 
@@ -137,9 +162,6 @@
         display: block;
     }  
     &-toggle {
-        &:focus{
-            box-shadow: 0 0 0 6px var(--secondary);
-        }
         &-wrap { 
             height: 28px; 
             @apply relative z-50 mr-2 ;
@@ -150,10 +172,14 @@
         width: 40px;
         height: 28px;
         transform: rotate(0deg);
-        transition: .5s ease-in-out;
+        transition: all .5s ease-in-out;
         cursor: pointer; 
-        box-shadow: 0 0 0 6px var(--secondary);
+        box-shadow: 0 0 0 8px var(--primary);
         @apply bg-primary-500 ; 
+        border-radius: 1px;
+        &:focus{
+         box-shadow: 0 0 0 8px var(--primary); 
+        }
         span {
             @apply bg-white ;
             display: block;
@@ -162,7 +188,7 @@
             width: 50%; 
             opacity: 1;
             transform: rotate(0deg);
-            transition: .2s ease-in-out; 
+            transition: all .2s ease-in-out; 
             &:nth-child(even) {
                 left: 50%;
             }
@@ -240,50 +266,3 @@
 
 }
 
-/* Menu width icons */
-/* purgecss start ignore */ 
- .menu-item{
-    &-account,&-logout{
-        a{
-            @apply flex flex-row-reverse; 
-        }
-    }
-    &-account{
-        a{ 
-            &::after{
-                @include fontawasome(\f007,400);
-                @apply mr-1;
-            }
-        }
-    }
-    &-logout{ 
-        a{
-            &::after{
-                @include fontawasome(\f2f5,800);
-                @apply mr-1;
-            } 
-        }
-    }
-        
-}
-
-.mobile-nav{
-    .menu-item{ 
-        &-account{
-            a{ 
-                &::after{ 
-                    @apply ml-1;
-                }
-            }
-        }
-        &-logout{ 
-            a{
-                &::after{ 
-                    @apply ml-1;
-                } 
-            }
-        }
-            
-    }
-}
-  /* purgecss end ignore */

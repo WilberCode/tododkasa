@@ -2,7 +2,7 @@
     main{
         .woocommerce{
             @apply grid grid-cols-7  gap-6 mt-8  mb-8; 
-           .woocommerce-MyAccount-navigation{
+           .woocommerce-MyAccount-navigation{ 
                @apply col-span-7 ; 
                @screen md{
                    @apply  col-span-2; 
@@ -11,14 +11,30 @@
                    @apply   border border-gray-400 p-6 my-0;  
                    li{
                        @apply  border-b  border-gray-200 px-3 ; 
-                       &:hover{
-                           @apply bg-gray-200 rounded-md text-secondary-500 ; 
-                       }
+                     
                        a{
-                           @apply block py-4;
+                           @apply flex flex-no-wrap justify-between py-4;
+                           svg{
+                               @apply w-6 h-6 text-gray-800  fill-current ;
+                           }
                        }
+                    &:hover{
+                        @apply bg-gray-200 rounded-md text-primary-500 ; 
+                        a svg{
+                            @apply  text-primary-500  fill-current ;
+                        } 
+                    }
        
                    }
+                   .woocommerce-MyAccount-navigation-link.is-active{ 
+    
+                    a{
+                       @apply text-primary-500;
+                        svg{
+                           @apply text-primary-500 fill-current;
+                        }
+                    }
+                 }
                    li:last-child{
                        @apply  border-b-0 ; 
        
@@ -27,6 +43,9 @@
            }
            .woocommerce-MyAccount-content{
                @apply col-span-7 ; 
+               a{
+                   @apply text-primary-500;
+               }
                @screen md{
                    @apply  col-span-5; 
                }  
@@ -67,15 +86,17 @@
                                 }
                                 &.woocommerce-orders-table__cell-order-actions{
                                     a{
-                                       @include btnSimple;
-                                       @apply whitespace-no-wrap ; 
+                                       @include btnSmOutline;
+                                       @apply    inline-flex flex-no-wrap mb-2 ; 
                                        @screen maxsm {
-                                           @apply  mr-0 ; 
-                                       
+                                           @apply  mr-0 ml-2 ;  
                                        }
-                                       &::before{
+                                       svg{
+                                         @apply w-6 h-6 fill-current mr-2;
+                                       }
+                                     /*   &::before{
                                            @include fontawasome(\f06e);  
-                                       }
+                                       } */
                                     }
                                 }
                                &.actions{
@@ -139,6 +160,11 @@
                            @apply pb-1 inline-block; 
                        }
                    }
+                   p{
+                    .woocommerce-Button{
+                        @include btn;
+                    }
+                   }
                    label{
                        @apply pb-1 pt-4 inline-block; 
                    }
@@ -190,9 +216,10 @@
                            @apply mb-2;
                        }
                        a{
-                           @include btnSimple;
-                           &::before{ 
-                               @include fontawasome(\f304);   
+                           @include btnSmOutline;
+                           @apply inline-flex; 
+                           svg{
+                               @apply w-5 h-5 mr-2 text-primary-500 fill-current ;
                            }
                            @apply mb-3;
                        } 
@@ -277,48 +304,4 @@
 }
 
 
-
-/* purgecss start ignore */ 
-.woocommerce-MyAccount-navigation ul li a::before{
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    float: right; 
-    font-family: "Font Awesome 5 Free"; 
-    
-  }
-  
-  .woocommerce-MyAccount-navigation-link.is-active{ 
-    color: $secondary;
-  }
-  
-  .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--dashboard a::before{ 
-    font-weight: 900; 
-    content: "\f108";
-    
-  
-  }
-  .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--orders a::before{ 
-    font-weight: 900; 
-    content: "\f218";
-  }
-  .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--downloads a::before{ 
-    font-weight: 900; 
-    content: "\f019";
-    
-  }
-  .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-address a::before{
-    font-weight: 900; 
-    content: "\e065";
-  }
-  .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account a::before{
-    font-weight: 400; 
-    content: "\f007";
-  }
-  .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout a::before{
-    font-weight: 900; 
-    content: "\f2f5";
-  }
-  /* purgecss end ignore */
+ 

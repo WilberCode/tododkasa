@@ -83,16 +83,14 @@
                             @apply  mt-3 hidden ; 
                         }
                         .out-of-stock{
-                            @include messageOutOfStock;
-                            &::before{
-                                @include fontawasome;
-                                @apply mr-2;
-                                font-weight: 900; 
-                                content: "\f071";
+                            @include messageOutOfStock; 
+                            @apply inline-flex flex-no-wrap ;
+                            svg{
+                                @apply w-5 h-5 text-white fill-current mr-2;    
                             }
                         }
                         .pwb-single-product-brands.pwb-clearfix{
-                            @apply hidden w-40;
+                            @apply w-40 hidden ;
                         }
                       
                     }

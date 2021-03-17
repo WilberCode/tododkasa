@@ -1,5 +1,5 @@
 let  menuMobile = ($)=>{
-    // Shorthand  ID
+    // Shorthand 
     const Id = document.getElementById.bind(document)   
     let mobileNav = Id('mobile-nav-wrap')   
     let navToggle = Id('nav-toggle')   

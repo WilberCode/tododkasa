@@ -27,8 +27,8 @@
             }
             &-submit-container{
                 @apply mt-0 ;
-                button{ 
-                    @apply bg-primary-500 text-white  rounded-none font-normal py-3 px-5 border-none  inline-block  text-base text-center leading-6 #{!important};  
+                button{  
+                    @apply bg-primary-500 rounded-md text-white   font-normal py-3 px-5 border-2 border-primary-500 inline-block  text-base text-center leading-6 #{!important};  
 
                 }
             }

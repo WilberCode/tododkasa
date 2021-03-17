@@ -30,7 +30,7 @@ mix.js('assets/js/app.js', 'js');
 mix.sass('assets/scss/app.scss', 'css').options({ processCssUrls: false});  
 mix.copy('assets/img', 'build/img'); 
 mix.copy('assets/svg', 'build/svg');
-mix.copy('assets/font', 'build/font'); 
+/* mix.copy('assets/font', 'build/font');  */
 
 // The package internally limits running to production builds so we don't need
 // to wrap this up with a condition.
@@ -44,7 +44,7 @@ mix.purgeCss({
     ]),
     whitelist: ['current-menu-item' ],
     // whitelistPatterns: [/^search-/],
-    whitelistPatternsChildren: [/^search-/,/^rslides_nav/, /^wp-block/,/^marca-social/,/^qubely-/,/^woocommerce/,/^products/, /^woocommerce-/,/^table/,/^single-product/,/^woocommerce-account/,/^post-type-archive-product/,/^tax-product_cat/,/^page-id-3/,/^privacy-policy/]
+    whitelistPatternsChildren: [/^menu-item/,/^search-/,/^rslides_nav/, /^wp-block/,/^marca-social/,/^qubely-/,/^woocommerce/,/^products/, /^woocommerce-/,/^table/,/^single-product/,/^woocommerce-account/,/^post-type-archive-product/,/^tax-product_cat/,/^page-id-3/,/^privacy-policy/]
 });
 
 // if (mix.inProduction()) {
