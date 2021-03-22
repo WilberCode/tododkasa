@@ -1,5 +1,4 @@
-
-.woocommerce-notices-wrapper{
+.woocommerce-notices-wrapper{ 
     .woocommerce-message{
         @include noticeCyberSuccess;
         @apply  flex flex-wrap flex-col-reverse mt-4 items-center mr-0 ;
@@ -13,12 +12,15 @@
                 @apply  ml-2 ;
     
             }
-        }
+        } 
     }
+    .woocommerce-error{
+        @apply mr-3;
+    } 
 }
 .single{
     &-product{
-        .woocommerce-notices-wrapper{
+        .woocommerce-notices-wrapper { 
             .woocommerce-message{
                 @include noticeCyberSuccess;
                 @apply  flex text-white flex-col-reverse mt-5 mb-6 h-auto items-center mr-0 relative pt-0 pb-4  px-3 border-0 text-center  ;
