@@ -1,0 +1,86 @@
+
+.single{
+    &-product{
+        .woocommerce-notices-wrapper { 
+            .woocommerce-message{
+                 @include noticeCyberSuccess;
+                 @apply inline-flex mt-5 mb-6 h-auto items-center mr-0 relative  border-0 flex-col-reverse text-center  text-white py-4 px-4 rounded-md    ;
+         
+                @screen sm{
+                    @apply  flex-row-reverse text-left  ; 
+                } 
+                svg{
+                    @apply w-10 h-10 mr-4 mb-2;
+                    @screen sm{
+                     @apply  mb-0; 
+                    }
+                }
+                .button,a { 
+                    @apply inline-flex w-full max-w-notice  justify-center ml-0  text-white rounded-full py-1 px-3 text-center mt-2;
+                    background: rgba($color: #000, $alpha: 0.15); 
+                    &::before{
+                        content:'';
+                        @apply  mr-2  w-5 h-5; 
+                        background-image: url(../svg/buy.svg);
+                        background-size: 100%;
+                        filter: brightness(0) invert(1);    
+                    } 
+                    @screen sm{
+                        @apply  ml-2 mt-0 ;
+            
+                    } 
+                }
+            }
+        }
+    }
+}  
+
+.woocommerce-Message, .woocommerce-error,.woocommerce-message,.cart-empty,.woocommerce-info{
+    @include noticeCyberInfo;
+    @apply flex mt-5 mb-6 h-auto items-center mr-0 relative  border-0 flex-col-reverse text-center  text-white py-4 px-4 rounded-md    ;
+    @screen sm{
+        @apply flex-row-reverse inline-flex text-left;
+
+    } 
+    a,.woocommerce-Button{
+        @apply     rounded-full py-1 px-3 text-center ml-2 mt-2   ;  
+        @apply  text-white #{!important}  ;  
+        background: rgba($color: #000, $alpha: 0.15);  
+        @screen sm{
+            @apply  ml-2 mt-0;
+
+        }
+    }
+}
+.woocommerce-info{
+    @include noticeCyberInfo;
+} 
+.woocommerce-error{
+    @include noticeCyberError;
+    @apply inline-block mr-0 ;
+    @screen sm{
+       @apply mr-2 ;
+
+    }
+
+}
+.woocommerce-cart{
+    .woocommerce-message{  
+        @include noticeCyberSuccess;
+        @apply mr-2;
+    }
+    .cart-empty{
+        @include noticeCyberInfo;
+
+    }
+    .return-to-shop{
+        @apply inline-flex items-center;
+        .button {
+         
+            @include btnOutline;
+        }
+      
+    }
+}
+ 
+ 

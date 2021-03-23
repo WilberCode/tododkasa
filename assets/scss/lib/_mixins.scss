@@ -1,0 +1,41 @@
+@mixin btn() {
+  @apply  bg-primary-500 text-white border-2 border-primary-500  font-normal py-3 px-5  inline-block rounded-md  text-base text-center leading-6 ; 
+}
+@mixin btnOutline() {
+  @apply  border-2 border-primary-500  text-primary-500 font-normal py-3 px-5  inline-block rounded-md  text-base text-center leading-6 ; 
+  &:hover{
+    @apply bg-primary-500 text-white;
+    svg{
+      @apply  text-white fill-current ; 
+    }
+  }
+}
+@mixin btnSmOutline() {
+  @apply  border-2 border-primary-500  text-primary-500 font-normal py-2 px-4  inline-block rounded-md  text-base text-center leading-6 ; 
+  &:hover{
+    @apply bg-primary-500 text-white;
+    svg{
+      @apply  text-white fill-current ; 
+    }
+  }
+}
+@mixin messageOutOfStock {
+  @apply  bg-error text-white  font-normal py-2 px-5 border-none  inline-block  text-base text-center leading-6 ;  
+}
+ 
+
+ 
+
+@mixin animation(){
+  transition: all .2s  cubic-bezier(0.4, 0, 1, 1);
+}
+
+@mixin noticeCyberSuccess() {
+  @apply  bg-success text-white  ; 
+}
+@mixin noticeCyberInfo() {
+  @apply  bg-info text-white ; 
+}
+@mixin noticeCyberError() {
+  @apply  bg-error text-white ; 
+}
