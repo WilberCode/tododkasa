@@ -116,6 +116,7 @@ module.exports = {
                 '6xl': '72rem',
                 'modal': '66rem',
                 'container': '84.25rem',
+                'notice': '135px',
                 'products': '509.69px',
                 'products-grid': '1100px',
                 'image': '423px',

@@ -31,11 +31,11 @@
 }
 
 @mixin noticeCyberSuccess() {
-  @apply border-l-4 border-success py-3 px-4 shadow ; 
+  @apply  bg-success text-white  ; 
 }
 @mixin noticeCyberInfo() {
-  @apply border-l-4 border-info py-3 px-4 shadow; 
+  @apply  bg-info text-white ; 
 }
 @mixin noticeCyberError() {
-  @apply border-l-4 border-error py-3 px-4 shadow; 
+  @apply  bg-error text-white ; 
 }
