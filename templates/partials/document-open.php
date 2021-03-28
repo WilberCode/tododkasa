@@ -9,11 +9,14 @@
      <meta name="keywords" content="Grupo Tendenze Comunicaciones, Ferias digitales, feria digital mamá, feria digital papá, muestra con tu marca, promoción, Belleza, Deco Vintage, Seguros, Nutrición, Maternidad, Accesorios, Video mamá, Detalles, Postres, Flores, 
 Meat Fest, Carnes, Gourmet, Piel Seca, Experiencia, Vinos, Meditación"> 
     <?php wp_head() ?> 
- 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-193136559-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <?php //if(is_product_taxonomy('pigeon')){?>
-       
-        
-    <?php //} ?> 
+  gtag('config', 'UA-193136559-1');
+</script>
 </head>
 <body <?php body_class()  ?>  > 
